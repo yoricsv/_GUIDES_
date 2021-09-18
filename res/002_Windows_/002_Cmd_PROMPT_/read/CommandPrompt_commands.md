@@ -1,23 +1,28 @@
-# _GUIDES_ > Windows
-Here I collect guides, notes, and other information.
+# [_GUIDES_][1] > [Windows][3] > **Command Prompt (CMD) Commands**
 
-## CONTENTS:<!--Done!-->
-* [Git & GitHub][1]
-* [Windows][2]
-* [Linux][3] (Unix)
-* [Networks][4]
-* [Programming Languages][5]
-* [Databases][6]
-* [Docker & Kubernetes][7]
-* [Embedded systems][8]
+## <p align=center>[Git & GitHub][2] | [Windows][3] | [Linux][4] | [Networks][5] <br/> [Programming][6] | [Databases][7] | [Docker & Kubernetes][8] | [Embedded systems][9] </p><!--Done!--> 
+
 ---
+<!--
+* [_GUIDES_][1]
+* [Git & GitHub][2]
+* [Windows][3]
+* [Linux][4]
+* [Networks][5]
+* [Programming][6]
+* [Databases][7]
+* [Docker & Kubernetes][8]
+* [Embedded systems][9]
+-->
 
-[1]: ../001_Git_and_GitHub_/Git_And_GitHub.md
-[2]: Windows.md
-[3]: ../003_Linux_(Unix)_/Linux_(Unix).md
-[4]: ../004_Networks_/Networks.md
-[5]: ../005_Programming_languages_/Programming.md
-[6]: ../006_Databases_/Databases.md
-[7]: ../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
-[8]: ../008_Embedded_systems_/Embedded_systems.md
+
+[1]: ../../../../README.md
+[2]: ../../../001_Git_and_GitHub_/Git_And_GitHub.md
+[3]: ../../Windows.md
+[4]: ../../../003_Linux_(Unix)_/Linux_(Unix).md
+[5]: ../../../004_Networks_/Networks.md
+[6]: ../../../005_Programming_languages_/Programming.md
+[7]: ../../../006_Databases_/Databases.md
+[8]: ../../../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
+[9]: ../../../008_Embedded_systems_/Embedded_systems.md
 <br/>
