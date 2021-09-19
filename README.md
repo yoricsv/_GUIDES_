@@ -1,5 +1,5 @@
 # _GUIDES_
-Here I collect guides, notes, and other information.
+## Here I collect guides, notes, and other information.
 
 ## CONTENTS:<!--Done!-->
 * [Git & GitHub][1]
@@ -21,3 +21,9 @@ Here I collect guides, notes, and other information.
 [7]: res/007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
 [8]: res/008_Embedded_systems_/Embedded_systems.md
 <br/>
+
+### Cheat-Sheets:
+* [MarkDown][9]
+
+
+[9]: res/001_Git_and_GitHub_/res/001_Markdown_README_/read/MarkDown.md

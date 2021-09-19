@@ -1,11 +1,7 @@
-## [_GUIDES_][1] > **Git & GitHub**
+## [_GUIDES_][1] > **Git Commands** *(Cheat-sheet)*
 
 ## <p align=center>[Git & GitHub][2] | [Windows][3] | [Linux][4] | [Networks][5] <br/> [Programming][6] | [Databases][7] | [Docker & Kubernetes][8] | [Embedded systems][9] </p>
 
----
-<br/>
-
-<!--Done!--> 
 <!--
 * [_GUIDES_][1]
 * [Git & GitHub][2]
@@ -16,34 +12,47 @@
 * [Databases][7]
 * [Docker & Kubernetes][8]
 * [Embedded systems][9]
-
 -->
 
-[1]: ../../README.md
-[2]: Git_And_GitHub.md
-[3]: ../002_Windows_/Windows.md
-[4]: ../003_Linux_(Unix)_/Linux_(Unix).md
-[5]: ../004_Networks_/Networks.md
-[6]: ../005_Programming_languages_/Programming.md
-[7]: ../006_Databases_/Databases.md
-[8]: ../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
-[9]: ../008_Embedded_systems_/Embedded_systems.md
-
-
-# <p align=center><b>Git & GitHub</b></p>
-
-## CONTENTS:<!--Done!-->
-* [Git Commands][10] *(Cheat sheet)*
-* [MarkDown][11] *(Cheat sheet)*
+[1]: ../../../../../README.md
+[2]: ../../../Git_And_GitHub.md
+[3]: ../../../../002_Windows_/Windows.md
+[4]: ../../../../003_Linux_(Unix)_/Linux_(Unix).md
+[5]: ../../../../004_Networks_/Networks.md
+[6]: ../../../../005_Programming_languages_/Programming.md
+[7]: ../../../../006_Databases_/Databases.md
+[8]: ../../../../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
+[9]: ../../../../008_Embedded_systems_/Embedded_systems.md
 
 ---
-
-[10]: res/002_Git_Commands_/read/Git_Commands.md
-[11]: res/001_Markdown_README_/read/MarkDown.md
-
-<br/>
+<br/><!--Done!-->
 
 # <p align=center><b>A List of Git Commands</b> <i>(Cheat Sheet)</i></p>
+## CONTENTS:
+* Git Setup
+* Git Configuration
+* Ignoring patterns
+* Managing Files
+* Tracking path changes
+* Git Branches
+* Making Changes
+* Undoing Changes
+* Rewriting History
+* Temporary commits
+* Remote Repositories
+* Git Cheat Sheet PDF
+
+<!--
+* [List of language aliases][10]
+-->
+
+[10]: MarkDown_syntax_higlight_(short).md
+
+---
+<br/>
+
+
+# A List of Git Commands *(Cheat Sheet)*
 In case you **don't quite know** something, use the help:
 
 ```git
