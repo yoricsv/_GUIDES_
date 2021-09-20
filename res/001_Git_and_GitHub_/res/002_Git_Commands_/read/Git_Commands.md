@@ -25,9 +25,10 @@
 [9]: ../../../../008_Embedded_systems_/Embedded_systems.md
 
 ---
-<br/><!--Done!-->
+<br/>
+<!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
-# <p align=center><b>A List of Git Commands</b> <i>(Cheat Sheet)</i></p>
+# <p align=center><b>The most Commonly used commands</b> <i>(Cheat Sheet)</i></p>
 ## CONTENTS:
 * Git Setup
 * Git Configuration
@@ -42,22 +43,16 @@
 * Remote Repositories
 * Git Cheat Sheet PDF
 
-<!--
-* [List of language aliases][10]
--->
-
-[10]: MarkDown_syntax_higlight_(short).md
-
 ---
 <br/>
 
-
-# A List of Git Commands *(Cheat Sheet)*
 In case you **don't quite know** something, use the help:
 
 ```git
 git command --help
 ```
+
+![Git stage scheme][18]
 
 ---
 <br/>
@@ -85,6 +80,12 @@ git clone [repo / URL] [folder]
 <br/>
 
 ## Git Configuration
+**Display** an information about **configuration** including user name and email:
+
+```git
+git config -l
+```
+
 Attach an **author name** to all commits that will appear in the version history:
 
 ```git
@@ -287,15 +288,15 @@ git branch [new_branch]
 git checkout [branch]
 ```
 
-> ***NOTE:*** For a more detailed tutorial on working with Git branches, you can refer to our article on [How to Create a New Branch](https://phoenixnap.com/kb/git-create-new-branch) or [How to Switch Branches in Git](https://phoenixnap.com/kb/git-switch-branch).
+> ***NOTE:*** For a more detailed tutorial on working with Git branches, you can refer to our article on [How to Create a New Branch][10] or [How to Switch Branches in Git][11].
 
-[**Delete**](https://phoenixnap.com/kb/delete-remote-and-local-git-branch) a local branch:
+[**Delete**][12] a local branch:
 
 ```git
 git branch -d [branch]
 ```
 
-[**Rename**](https://phoenixnap.com/kb/how-to-rename-git-branch-local-remote) a branch you are **currently working in**:
+[**Rename**][13] a branch you are **currently working in**:
 
 ```git
 git branch -m [new_branch_name]
@@ -353,13 +354,13 @@ git tag [tag]"
 <br/>
 
 ## Undoing Changes
-**Undo changes** in a file or directory and create a new commit with the [git revert](https://phoenixnap.com/kb/git-revert-last-commit) command:
+**Undo changes** in a file or directory and create a new commit with the [git revert][14] command:
 
 ```git
 git revert [file/directory]
 ```
 
-[Unstage a file](https://phoenixnap.com/kb/git-unstage-files) without overwriting changes:
+[Unstage a file][15] without overwriting changes:
 
 ```git
 git reset [file]
@@ -477,13 +478,33 @@ git pull --rebase
 git push [remote_repo] [branch]
 ```
 
-> ***NOTE:*** When a particular remote is no longer needed, you can [remove a git remote from a repository](https://phoenixnap.com/kb/git-remove-remote).
+> ***NOTE:*** When a particular remote is no longer needed, you can [remove a git remote from a repository][16].
 
 ---
 <br/>
 
 ## Git Cheat Sheet PDF
-For future use, you can refer to the one-page Git Commands Reference. Click the [Download](../files/git-command.pdf) Cheat Sheet button to save the Git Commands PDF.
- 
+For future use, you can refer to the one-page Git Commands Reference. Click the [Download][17] Cheat Sheet button to save the Git Commands PDF.
+<!--
+* [Create New Branch][10]
+* [Switch Branches][11]
+* [Delete][12]
+* [Rename][13]
+* [Revert][14]
+* [Unstaged][15]
+* [Remove][16]
+* [Download][17]
+-->
+
+[10]: https://phoenixnap.com/kb/git-create-new-branch
+[11]: https://phoenixnap.com/kb/git-switch-branch
+[12]: https://phoenixnap.com/kb/delete-remote-and-local-git-branch
+[13]: https://phoenixnap.com/kb/how-to-rename-git-branch-local-remote
+[14]: https://phoenixnap.com/kb/git-revert-last-commit
+[15]: https://phoenixnap.com/kb/git-unstage-files
+[16]: https://phoenixnap.com/kb/git-remove-remote
+[17]: ../files/git-command.pdf
+[18]: ../img/CZ62a.png
+
 ---
 <br/>
