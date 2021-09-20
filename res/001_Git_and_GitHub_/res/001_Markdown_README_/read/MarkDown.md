@@ -173,6 +173,7 @@ or
 ```
 
 #### *`Would become (result)`*:
+
 ![MarkDown Logo](../img/MarkDownLogo.png)
 
 ---
