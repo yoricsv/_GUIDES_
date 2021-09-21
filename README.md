@@ -43,6 +43,8 @@
 ### Cheat-Sheets:
 * [MarkDown][9]
 * [Git Commands][10]
+* [Command Prompt (cmd) Commands][11]
+* [PowerShell Comandlets][12]
 
 
 <!--
@@ -52,9 +54,8 @@
 
 [9]: res/001_Git_and_GitHub_/res/001_Markdown_README_/read/MarkDown.md
 [10]: res/001_Git_and_GitHub_/res/002_Git_Commands_/read/Git_Commands.md
+[11]: res/002_Windows_/res/32_Cmd_PROMPT_/read/CommandPrompt_commands.md
+[12]: res/002_Windows_/res/32_Cmdlet_POWERSHELL_/read/PowerShell.md
 
 ---
 <br/>
-
-CommandPrompt_commands.md
-PowerShell.md
