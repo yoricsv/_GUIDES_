@@ -1,29 +1,30 @@
-## [_GUIDES_][1] > **Git & GitHub**
+## [_GUIDES_][guides] > **Git & GitHub**
 
-## <p align=center>[Git & GitHub][2] | [Windows][3] | [Linux][4] | [Networks][5] <br/> [Programming][6] | [Databases][7] | [Docker & Kubernetes][8] | [Embedded systems][9] </p>
+## <p align=center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] <br/> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
 
 <!--
-* [_GUIDES_][1]
-* [Git & GitHub][2]
-* [Windows][3]
-* [Linux][4]
-* [Networks][5]
-* [Programming][6]
-* [Databases][7]
-* [Docker & Kubernetes][8]
-* [Embedded systems][9]
+* [_GUIDES_][guides]
+* [Git & GitHub][git]
+* [Windows][win]
+* [Linux][linux] (Unix)
+* [Networks][nets]
+* [Programming Languages][progLang]
+* [Databases][db]
+* [Docker & Kubernetes][docker]
+* [Embedded systems][embSys]
+* [CMake][CMake]
 -->
 
-[1]: ../../README.md
-[2]: Git_And_GitHub.md
-[3]: ../002_Windows_/Windows.md
-[4]: ../003_Linux_(Unix)_/Linux_(Unix).md
-[5]: ../004_Networks_/Networks.md
-[6]: ../005_Programming_languages_/Programming.md
-[7]: ../006_Databases_/Databases.md
-[8]: ../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
-[9]: ../008_Embedded_systems_/Embedded_systems.md
-
+[guides]: ../../README.md
+[git]: Git_And_GitHub.md
+[win]: ../002_Windows_/Windows.md
+[linux]: ../003_Linux_(Unix)_/Linux_(Unix).md
+[nets]: ../004_Networks_/Networks.md
+[progLang]: ../005_Programming_languages_/Programming.md
+[db]: ../006_Databases_/Databases.md
+[docker]: ../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
+[embSys]: ../008_Embedded_systems_/Embedded_systems.md
+[CMake]: ../009_CMake_/CMake_Tutorial.md
 ---
 <br/>
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->

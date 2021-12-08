@@ -1,26 +1,28 @@
 # _GUIDES_
 
-## <p align=center>[Git & GitHub][1] | [Windows][2] | [Linux][3] | [Networks][4] <br/> [Programming][5] | [Databases][6] | [Docker & Kubernetes][7] | [Embedded systems][8] </p>
+## <p align=center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] <br/> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
 
 <!--
-* [Git & GitHub][1]
-* [Windows][2]
-* [Linux][3] (Unix)
-* [Networks][4]
-* [Programming Languages][5]
-* [Databases][6]
-* [Docker & Kubernetes][7]
-* [Embedded systems][8]
+* [Git & GitHub][git]
+* [Windows][win]
+* [Linux][linux] (Unix)
+* [Networks][nets]
+* [Programming Languages][progLang]
+* [Databases][db]
+* [Docker & Kubernetes][docker]
+* [Embedded systems][embSys]
+* [CMake][CMake]
 -->
 
-[1]: res/001_Git_and_GitHub_/Git_And_GitHub.md
-[2]: res/002_Windows_/Windows.md
-[3]: res/003_Linux_(Unix)_/Linux_(Unix).md
-[4]: res/004_Networks_/Networks.md
-[5]: res/005_Programming_languages_/Programming.md
-[6]: res/006_Databases_/Databases.md
-[7]: res/007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
-[8]: res/008_Embedded_systems_/Embedded_systems.md
+[git]: res/001_Git_and_GitHub_/Git_And_GitHub.md
+[win]: res/002_Windows_/Windows.md
+[linux]: res/003_Linux_(Unix)_/Linux_(Unix).md
+[nets]: res/004_Networks_/Networks.md
+[progLang]: res/005_Programming_languages_/Programming.md
+[db]: res/006_Databases_/Databases.md
+[docker]: res/007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
+[embSys]: res/008_Embedded_systems_/Embedded_systems.md
+[CMake]: res/009_CMake_/CMake_Tutorial.md
 
 ---
 <br/>
@@ -30,32 +32,34 @@
 
 ### Here is I collect guides, notes and other information..
 ## CONTENTS:<!--Done!-->
-* [Git & GitHub][1]
-* [Windows][2]
-* [Linux][3] (Unix)
-* [Networks][4]
-* [Programming Languages][5]
-* [Databases][6]
-* [Docker & Kubernetes][7]
-* [Embedded systems][8]
+* [Git & GitHub][git]
+* [Windows][win]
+* [Linux][linux] (Unix)
+* [Networks][nets]
+* [Programming Languages][progLang]
+* [Databases][db]
+* [Docker & Kubernetes][docker]
+* [Embedded systems][embSys]
+* [CMake][CMake]
 
 
 ### Cheat-Sheets:
-* [MarkDown][9]
-* [Git Commands][10]
-* [Command Prompt (cmd) Commands][11]
-* [PowerShell Comandlets][12]
+* [MarkDown][MarkDown]
+* [Git Commands][GitCommands]
+* [Command Prompt (cmd) Commands][cmdCommands]
+* [PowerShell Comandlets][pwshCommands]
 
 
 <!--
-* [MarkDown][9]
-* [Git Commands][10]
+* [MarkDown][MarkDown]
+* [Git Commands][GitCommands]
+* [Command Prompt (cmd) Commands][cmdCommands]
+* [PowerShell Comandlets][pwshCommands]
 -->
 
-[9]: res/001_Git_and_GitHub_/res/001_Markdown_README_/read/MarkDown.md
-[10]: res/001_Git_and_GitHub_/res/002_Git_Commands_/read/Git_Commands.md
-[11]: res/002_Windows_/res/32_Cmd_PROMPT_/read/CommandPrompt_commands.md
-[12]: res/002_Windows_/res/32_Cmdlet_POWERSHELL_/read/PowerShell.md
+[MarkDown]: res/001_Git_and_GitHub_/res/001_Markdown_README_/read/MarkDown.md
+[GitCommands]: res/001_Git_and_GitHub_/res/002_Git_Commands_/read/Git_Commands.md
+[cmdCommands]: res/002_Windows_/res/32_Cmd_PROMPT_/read/CommandPrompt_commands.md
+[pwshCommands]: res/002_Windows_/res/32_Cmdlet_POWERSHELL_/read/PowerShell.md
 
 ---
-<br/>
