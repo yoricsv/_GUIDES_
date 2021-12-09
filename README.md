@@ -29,7 +29,7 @@
 # <p align=center><b>List of Guides</b></p>
 
 ### Here is I collect guides, notes and other information..
-## CONTENTS:<!--Done!-->
+### CONTENTS:<!--Done!-->
 * [Git & GitHub][git]
 * [Windows][win]
 * [Linux][linux] (Unix)
@@ -40,13 +40,11 @@
 * [Embedded systems][embSys]
 * [CMake][CMake]
 
-
 ### Cheat-Sheets:
 * [MarkDown][MarkDown]
 * [Git Commands][GitCommands]
 * [Command Prompt (cmd) Commands][cmdCommands]
 * [PowerShell Comandlets][pwshCommands]
-
 
 <!--
 * [MarkDown][MarkDown]

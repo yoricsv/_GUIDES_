@@ -1,6 +1,6 @@
 ## [_GUIDES_][guides] > **Git & GitHub**
 
-## <p align=center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] <br/> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
+### <p align=center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] <br/> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
 
 <!--
 * [_GUIDES_][guides]
@@ -15,39 +15,27 @@
 * [CMake][CMake]
 -->
 
-[guides]: ../../README.md
-[git]: Git_And_GitHub.md
-[win]: ../002_Windows_/Windows.md
-[linux]: ../003_Linux_(Unix)_/Linux_(Unix).md
-[nets]: ../004_Networks_/Networks.md
+[guides]:   ../../README.md
+[git]:      Git_And_GitHub.md
+[win]:      ../002_Windows_/Windows.md
+[linux]:    ../003_Linux_(Unix)_/Linux_(Unix).md
+[nets]:     ../004_Networks_/Networks.md
 [progLang]: ../005_Programming_languages_/Programming.md
-[db]: ../006_Databases_/Databases.md
-[docker]: ../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
-[embSys]: ../008_Embedded_systems_/Embedded_systems.md
-[CMake]: ../009_CMake_/CMake_Tutorial.md
+[db]:       ../006_Databases_/Databases.md
+[docker]:   ../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
+[embSys]:   ../008_Embedded_systems_/Embedded_systems.md
+[CMake]:    ../009_CMake_/CMake_Tutorial.md
+
 ---
-<br/>
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
 # <p align=center><b>Git & GitHub</b></p>
 
-## CONTENTS:
-* [Git Commands][10] *(Cheat sheet)*
-* [MarkDown][11] *(Cheat sheet)*
+### CONTENTS:
+* [Git Commands][1] *(Cheat sheet)*
+* [MarkDown][2] *(Cheat sheet)*
 
 ---
-
-<!--
-* [Git Commands][10] *(Cheat sheet)*
-* [MarkDown][11] *(Cheat sheet)*
-* ![Git scheme][12]
--->
-
-[10]: res/002_Git_Commands_/read/Git_Commands.md
-[11]: res/001_Markdown_README_/read/MarkDown.md
-[12]: res/002_Git_Commands_/img/CZ62a.png
-
-
 ### Git is a distributed version control system.
 Git was created in 2005 by Linus Torvalds to help control the Linux kernel's development.
 
@@ -61,7 +49,16 @@ This way, different team members can copy it locally, and everyone will have a c
 
 Git has many different commands you can use. The sixty [most commonly used commands][10].
 
-![Git scheme][12]
+![Git scheme][3]
+
+<!--
+* [Git Commands][1] *(Cheat sheet)*
+* [MarkDown][2] *(Cheat sheet)*
+* ![Git scheme][3]
+-->
+
+[1]: res/002_Git_Commands_/read/Git_Commands.md
+[2]: res/001_Markdown_README_/read/MarkDown.md
+[3]: res/002_Git_Commands_/img/CZ62a.png
 
 ---
-<br/>

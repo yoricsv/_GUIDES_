@@ -27,7 +27,6 @@
 [CMake]:    CMake_Tutorial.md
 
 ---
-
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
 # <p align = center><b>CMake Tutorial<b></p>
@@ -70,15 +69,15 @@ tutorial directory of the CMake source code tree. Each step has its own subdirec
 * [Packaging Debug and Release][stp12]
 -->
 
-[stp1]: res/001_Tutorial_/read/Step_1_BasicStartingPoint.md
-[stp2]: res/001_Tutorial_/read/Step_2_AddingLibrary.md
-[stp3]: res/001_Tutorial_/read/Step_3_AddingUsageRequirementsforLibrary.md
-[stp4]: res/001_Tutorial_/read/Step_4_InstallingAndTesting.md
-[stp5]: res/001_Tutorial_/read/Step_5_AddingSystemIntrospection.md
-[stp6]: res/001_Tutorial_/read/Step_6_AddingCustomCommandAndGeneratedFile.md
-[stp7]: res/001_Tutorial_/read/Step_7_PackagingAndInstaller.md
-[stp8]: res/001_Tutorial_/read/Step_8_AddingSupportForTestingDashboard.md
-[stp9]: res/001_Tutorial_/read/Step_9_SelectingStaticOrSharedLibraries.md
+[stp1]:  res/001_Tutorial_/read/Step_1_BasicStartingPoint.md
+[stp2]:  res/001_Tutorial_/read/Step_2_AddingLibrary.md
+[stp3]:  res/001_Tutorial_/read/Step_3_AddingUsageRequirementsforLibrary.md
+[stp4]:  res/001_Tutorial_/read/Step_4_InstallingAndTesting.md
+[stp5]:  res/001_Tutorial_/read/Step_5_AddingSystemIntrospection.md
+[stp6]:  res/001_Tutorial_/read/Step_6_AddingCustomCommandAndGeneratedFile.md
+[stp7]:  res/001_Tutorial_/read/Step_7_PackagingAndInstaller.md
+[stp8]:  res/001_Tutorial_/read/Step_8_AddingSupportForTestingDashboard.md
+[stp9]:  res/001_Tutorial_/read/Step_9_SelectingStaticOrSharedLibraries.md
 [stp10]: res/001_Tutorial_/read/Step_10_AddingGeneratorExpressions.md
 [stp11]: res/001_Tutorial_/read/Step_11_AddingExportConfiguration.md
 [stp12]: res/001_Tutorial_/read/Step_12_PackagingDebugAndRelease.md

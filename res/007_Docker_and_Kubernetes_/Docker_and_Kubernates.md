@@ -1,23 +1,31 @@
-# _GUIDES_ > Docker & Kubernetes
-Here I collect guides, notes, and other information.
+## [_GUIDES_][guides] > **Docker & Kubernetes**
 
-## CONTENTS:<!--Done!-->
-* [Git & GitHub][1]
-* [Windows][2]
-* [Linux][3] (Unix)
-* [Networks][4]
-* [Programming Languages][5]
-* [Databases][6]
-* [Docker & Kubernetes][7]
-* [Embedded systems][8]
+### <p align=center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] <br/> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
+
+<!--
+* [_GUIDES_][guides]
+* [Git & GitHub][git]
+* [Windows][win]
+* [Linux][linux] (Unix)
+* [Networks][nets]
+* [Programming Languages][progLang]
+* [Databases][db]
+* [Docker & Kubernetes][docker]
+* [Embedded systems][embSys]
+* [CMake][CMake]
+-->
+
+[guides]:   ../../README.md
+[git]:      ../001_Git_and_GitHub_/Git_And_GitHub.md
+[win]:      ../002_Windows_/Windows.md
+[linux]:    ../003_Linux_(Unix)_/Linux_(Unix).md
+[nets]:     ../004_Networks_/Networks.md
+[progLang]: ../005_Programming_languages_/Programming.md
+[db]:       ../006_Databases_/Databases.md
+[docker]:   Docker_and_Kubernates.md
+[embSys]:   ../008_Embedded_systems_/Embedded_systems.md
+[CMake]:    ../009_CMake_/CMake_Tutorial.md
+
 ---
+<!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
-[1]: ../001_Git_and_GitHub_/Git_And_GitHub.md
-[2]: ../002_Windows_/Windows.md
-[3]: ../003_Linux_(Unix)_/Linux_(Unix).md
-[4]: ../004_Networks_/Networks.md
-[5]: ../005_Programming_languages_/Programming.md
-[6]: ../006_Databases_/Databases.md
-[7]: Docker_and_Kubernates.md
-[8]: ../008_Embedded_systems_/Embedded_systems.md
-<br/>
