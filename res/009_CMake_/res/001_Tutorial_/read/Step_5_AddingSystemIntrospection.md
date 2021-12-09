@@ -1,8 +1,9 @@
-## [_CMAKE_][CMake] > **Step 5: Adding System Introspection**
+## [_GUIDES_][guides] > [_CMake_][CMake] > **Step 5: Adding System Introspection**
 
 ## <p align=center>[Step 1][stp1] | [Step 2][stp2] | [Step 3][stp3] | [Step 4][stp4] | [Step 5][stp5] | [Step 6][stp6] <br/> [Step 7][stp7] | [Step 8][stp8] | [Step 9][stp9] | [Step 10][stp10] | [Step 11][stp11] | [Step 12][stp12]  </p>
 
 <!--
+* [_GUIDES_][guides]
 * [_CMAKE_][CMake]
 * [Step 1][stp1]
 * [Step 2][stp2]
@@ -16,23 +17,28 @@
 * [Step 10][stp10]
 * [Step 11][stp11]
 * [Step 12][stp12]
+
+_GUIDES_/res/009_CMake_/res/001_Tutorial_/read
+_GUIDES_/../../../../..
 -->
-[CMake]: ../../README.md
-[stp1]: https://github.com/yoricsv/002_CppCMake/002_1_BasicStartingPoint.git
-[stp2]: https://github.com/yoricsv/002_CppCMake/002_2_AddingLibrary.git
-[stp3]: https://github.com/yoricsv/002_CppCMake/002_3_UsageReqForLib.git
-[stp4]: https://github.com/yoricsv/002_CppCMake/002_4_InstallAndTest.git
-[stp5]: https://github.com/yoricsv/002_CppCMake/002_5_SysIntrospection.git
-[stp6]: https://github.com/yoricsv/002_CppCMake/002_6_ComFileGen.git
-[stp7]: https://github.com/yoricsv/002_CppCMake/002_7_BuildInstall.git
-[stp8]: https://github.com/yoricsv/002_CppCMake/002_8_Dashboard.git
-[stp9]: https://github.com/yoricsv/002_CppCMake/002_9_StaticShared.git
-[stp10]: https://github.com/yoricsv/002_CppCMake/002_10_GenExpression.git
-[stp11]: https://github.com/yoricsv/002_CppCMake/002_11_ExportConfig.git
-[stp12]: https://github.com/yoricsv/002_CppCMake/002_12_PackDebRel.git
+
+[guides]: ../../../../../README.md
+[CMake]:  ../../../CMake_Tutorial.md
+[stp1]:   Step_1_BasicStartingPoint.md
+[stp2]:   Step_2_AddingLibrary.md
+[stp3]:   Step_3_AddingUsageRequirementsforLibrary.md
+[stp4]:   Step_4_InstallingAndTesting.md
+[stp5]:   Step_5_AddingSystemIntrospection.md
+[stp6]:   Step_6_AddingCustomCommandAndGeneratedFile.md
+[stp7]:   Step_7_PackagingAndInstaller.md
+[stp8]:   Step_8_AddingSupportForTestingDashboard.md
+[stp9]:   Step_9_SelectingStaticOrSharedLibraries.md
+[stp10]:  Step_10_AddingGeneratorExpressions.md
+[stp11]:  Step_11_AddingExportConfiguration.md
+[stp12]:  Step_12_PackagingDebugAndRelease.md
 
 ---
-<br/>
+
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
 # <p align = center><b>002_5_SysIntrospection<b></p>

@@ -1,4 +1,4 @@
-## [_GUIDES_][guides] > [_CMAKE_][CMake] > **Step 1: A Basic Starting Point**
+## [_GUIDES_][guides] > [_CMake_][CMake] > **Step 1: A Basic Starting Point**
 
 ## <p align=center>[Step 1][stp1] | [Step 2][stp2] | [Step 3][stp3] | [Step 4][stp4] | [Step 5][stp5] | [Step 6][stp6] <br/> [Step 7][stp7] | [Step 8][stp8] | [Step 9][stp9] | [Step 10][stp10] | [Step 11][stp11] | [Step 12][stp12]  </p>
 
@@ -17,10 +17,13 @@
 * [Step 10][stp10]
 * [Step 11][stp11]
 * [Step 12][stp12]
+
+_GUIDES_/res/009_CMake_/res/001_Tutorial_/read
+_GUIDES_/../../../../..
 -->
 
-[guides]: ../../../../README.md
-[CMake]:  ../../CMake_Tutorial.md
+[guides]: ../../../../../README.md
+[CMake]:  ../../../CMake_Tutorial.md
 [stp1]:   Step_1_BasicStartingPoint.md
 [stp2]:   Step_2_AddingLibrary.md
 [stp3]:   Step_3_AddingUsageRequirementsforLibrary.md
