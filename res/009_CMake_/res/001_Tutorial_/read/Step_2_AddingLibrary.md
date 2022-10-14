@@ -41,7 +41,7 @@ _GUIDES_/../../../../..
 
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
-# <p align = center><b>002_2_AddingLibrary<b></p>
+# <p align = center><b>002_2_AddingLibrary</b></p>
 
 Now we will add a library to our project. This library will contain our own implementation for computing the square root of a number. The executable can then use this library instead of the standard square root function provided by the compiler.
 
@@ -50,12 +50,15 @@ For this tutorial we will put the library into a subdirectory called **MathFunct
 Add the following one line ***CMakeLists.txt*** file to the **MathFunctions** directory:
 
 ### MathFunctions/CMakeLists.txt
+
 ```cmake
 add_library(MathFunctions mysqrt.cxx)
 ```
+
 To make use of the new library we will add an `add_subdirectory()` call in the top-level ***CMakeLists.txt*** file so that the library will get built. We add the new library to the executable, and add **MathFunctions** as an include directory so that the ***mysqrt.h*** header file can be found. The last few lines of the top-level ***CMakeLists.txt*** file should now look like:
 
 ### CMakeLists.txt
+
 ```cmake
 # add the MathFunctions library
 add_subdirectory(MathFunctions)
@@ -85,6 +88,7 @@ target_include_directories(
 Now let us make the **MathFunctions** library optional. While for the tutorial there really isn't any need to do so, for larger projects this is a common occurrence. The first step is to add an option to the top-level ***CMakeLists.txt*** file.
 
 ### CMakeLists.txt
+
 ```cmake
 option(
    USE_MYMATH
@@ -98,11 +102,13 @@ configure_file(
       TutorialConfig.h
 )
 ```
+
 This option will be displayed in the **cmake-gui** and **ccmake** with a default value of **ON** that can be changed by the user. This setting will be stored in the cache so that the user does not need to set the value each time they run CMake on a build directory.
 
 The next change is to make building and linking the **MathFunctions** library conditional. To do this, we will create an `if` statement which checks the value of the option. Inside the `if` block, put the `add_subdirectory()` command from above with some additional list commands to store information needed to link to the library and add the subdirectory as an include directory in the **Tutorial** *target*. The end of the *top-level* ***CMakeLists.txt*** file will now look like the following:
 
 ### CMakeLists.txt
+
 ```cmake
 if(USE_MYMATH)
    add_subdirectory(MathFunctions)
@@ -145,6 +151,7 @@ target_include_directories(
 The corresponding changes to the source code are fairly straightforward. First, in ***tutorial.cxx***, include the ***MathFunctions.h*** header if we need it:
 
 ### tutorial.cxx
+
 ```cpp
 #ifdef USE_MYMATH
 #  include "MathFunctions.h"
@@ -154,6 +161,7 @@ The corresponding changes to the source code are fairly straightforward. First, 
 Then, in the same file, make `USE_MYMATH` control which square root function is used:
 
 ### tutorial.cxx
+
 ```cpp
 #ifdef USE_MYMATH
   const double outputValue = mysqrt(inputValue);
@@ -165,6 +173,7 @@ Then, in the same file, make `USE_MYMATH` control which square root function is 
 Since the source code now requires `USE_MYMATH` we can add it to ***TutorialConfig.h.in*** with the following line:
 
 ### TutorialConfig.h.in
+
 ```cpp
 #cmakedefine USE_MYMATH
 ```

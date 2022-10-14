@@ -41,11 +41,12 @@ _GUIDES_/../../../../..
 
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
-# <p align = center><b>002_1_BasicStartingPoint<b></p>
+# <p align = center><b>002_1_BasicStartingPoint</b></p>
 
 The most basic project is an executable built from source code files. For simple projects, a three line `CMakeLists.txt` file is all that is required. This will be the starting point for our tutorial. Create a `CMakeLists.txt` file in the **Step1** directory that looks like:
 
 ### CMakeLists.txt
+
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 
@@ -66,6 +67,7 @@ add_executable(
 ---
 
 ## Build and Run
+
 That's all that is needed - we can build and run our project now! First, run the ***cmake*** executable or the ***cmake-gui*** to configure the project and then build it with your chosen build tool.
 
 *For example*, from the command line we could navigate to the `Help/guide/tutorial` directory of the CMake source code tree and create a build directory:
@@ -97,11 +99,13 @@ Tutorial
 ---
 
 ## Adding a Version Number and Configured Header File
+
 The first feature we will add is to provide our executable and project with a version number. While we could do this exclusively in the source code, using `CMakeLists.txt` provides more flexibility.
 
-First, modify the `CMakeLists.txt` file to use the project() command to set the project name and version number.
+First, modify the `CMakeLists.txt` file to use the `project()` command to set the project name and version number.
 
 ### CMakeLists.txt
+
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 
@@ -115,6 +119,7 @@ project(
 Then, configure a header file to pass the version number to the source code:
 
 ### CMakeLists.txt
+
 ```cmake
 configure_file(
     TutorialConfig.h.in
@@ -125,6 +130,7 @@ configure_file(
 Since the configured file will be written into the binary tree, we must add that directory to the list of paths to search for include files. Add the following lines to the end of the `CMakeLists.txt` file:
 
 ### CMakeLists.txt
+
 ```
 target_include_directories(
         Tutorial
@@ -135,7 +141,31 @@ target_include_directories(
 
 Using your favorite editor, create `TutorialConfig.h.in` in the source directory with the following contents:
 
+
+### Create TutorialConfig.h.in via Powershell
+
+```shell
+New_Item TutorialConfig.h.in
+```
+
+or
+
+```shell
+New-Item -Path 'C:\<pathToProjectFolder>\TutorialConfig.h.in' -Force
+```
+
+### Create TutorialConfig.h.in via Terminal (*nix)
+
+```shell
+> TutorialConfig.h.in
+```
+or
+```shell
+touch TutorialConfig.h.in
+```
+
 ### TutorialConfig.h.in
+
 ```cpp
 // the configured options and settings for Tutorial
 #define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
@@ -149,6 +179,7 @@ Next modify `tutorial.cxx` to include the configured header file, `TutorialConfi
 Finally, let's print out the executable name and version number by updating `tutorial.cxx` as follows:
 
 ### tutorial.cxx
+
 ```cpp
 if (argc < 2)
 {
@@ -170,12 +201,14 @@ if (argc < 2)
 ```
 
 ---
-</br>
+<br/>
 
 ## Specify the C++ Standard
+
 Next let's add some C++11 features to our project by replacing `atof` with `std::stod` in `tutorial.cxx`. At the same time, **remove** `#include <cstdlib>`.
 
 ### tutorial.cxx
+
 ```cpp
 const double inputValue = std::stod(argv[1]);
 ```
@@ -183,6 +216,7 @@ const double inputValue = std::stod(argv[1]);
 We will need to explicitly state in the CMake code that it should use the correct flags. The easiest way to enable support for a specific C++ standard in CMake is by using the **CMAKE_CXX_STANDARD** variable. For this tutorial, set the **CMAKE_CXX_STANDARD** variable in the `CMakeLists.txt` file to **11** and **CMAKE_CXX_STANDARD_REQUIRED** to **True**. Make sure to add the **CMAKE_CXX_STANDARD** declarations above the call to `add_executable()`.
 
 ### CMakeLists.txt
+
 ```cmake
 cmake_minimum_required(VERSION 3.10)
 
@@ -198,9 +232,10 @@ project(
 ```
 
 ---
-</br>
+<br/>
 
 ## Rebuild
+
 Let's build our project again. We already created a build directory and ran CMake, so we can skip to the build step:
 
 ```bash
@@ -215,22 +250,26 @@ Tutorial 4294967296
 Tutorial 10
 Tutorial
 ```
+
 Check that the version number is now reported when running the executable without any arguments.
 
 ---
 
 <!-- ## For maximum optimization,  of the "Hello, World!" app decided to use system calls, but OS Windows doesn't support the syscall.h file. To solve this problem, I'm using the `write()` function from the unistd.h library with output validation.
 
-> ***NOTE***: This project has two options that directly affect performance:</br>
+> ***NOTE***: This project has two options that directly affect performance:<br/>
+
 > 1. You can use a function to count the characters in a string, but this will have a negative effect because you have to use a loop. *(To activate this feature, you need to uncomment the  `COMPILE_DEFINITIONS  USE_GET_LENGTH_FUNCTION` line in the CMakeLists.txt file)*
 > 2. For maximum performance, the string length is hardcoded, but this isn't checked!
 
 ### The Write() function returns:
-* On SUCCESS, is returned the TOTAL NUMBER of written characters.</br>
-* If a writing ERROR occurs, is returned a NEGATIVE number !!!!</br>
+
+* On SUCCESS, is returned the TOTAL NUMBER of written characters.<br/>
+* If a writing ERROR occurs, is returned a NEGATIVE number !!!!<br/>
 
 ### Requirements:
-**Compiler</br> / Build System** | **Standard</br> / Version**
+
+**Compiler<br/> / Build System** | **Standard<br/> / Version**
 --: | :--
 **gcc** | v.6.3.0
 **MinGW** | v.3.82.90
@@ -241,6 +280,7 @@ Check that the version number is now reported when running the executable withou
 <!--**g++** | v.6.3.0 -->    <!--"C:\MinGW_Compiler_C-C++\bin"-->
 <!--
 ### Dependencies:
+
 **Library** | **Used functions, definitions, constants:**
 --: | :--
 **unistd.h** | *write()*
@@ -254,18 +294,22 @@ SDL2 | v.2.0.16 (stable) -->
 <!--
 ## Build the project
 
-> **NOTE**:</br> To download and install the latest version of:</br>
-> **CMake** use next link: ([*CMake download*][cmake])</br> 
+> **NOTE**:<br/> To download and install the latest version of:<br/>
+> **CMake** use next link: ([*CMake download*][cmake])<br/> 
 > **MinGW (g++)** toolchain use ([*MinGW download*][mingw])
 
 ## **TIP:** To compile and build the project for **Windows OS**
+
 1. Run the **CommandPrompt** or **PowerShell**:
    * `[Win]+[R]` -> Type: *`cmd`* or *`pwsh`* -> `[Shift]+[Ctrl]+[Enter]` *(to get admin rights)*
 2. Use the `cd` command to open the root of the project
+
 ### *(For Example:)*
+
 ```bash
 cd %USERPROFILE%\Downloads\001_2_CppHelloWorld_std17
 ```
+
 3. To keep the source code clean you should do *"out-of-source"* builds.
 
 ```bash
@@ -274,6 +318,7 @@ cd build
 cmake ..
 cmake --build .
 ```
+
 4. To run the target open `\out` folder *(will be generated by CMake)* and run executable file.
 
 ```bash
@@ -282,12 +327,16 @@ HelloWorld.exe
 ```
 
 ## **TIP:** To compile and build the project for **\*nix OS**
+
 1. Run the **Terminal**: `[Ctrl]+[Alt]+[T]`
 2. Use the `cd` command to open the root of the project
+
 ### *(For Example:)*
+
 ```bash
 cd $home/001_2_CppHelloWorld_std17
 ```
+
 3. To keep the source code clean you should do *"out-of-source"* builds.
 
 ```bash
@@ -296,6 +345,7 @@ cd build
 cmake ..
 cmake --build .
 ```
+
 4. To run the target open `/out` folder *(will be generated by CMake)* and run executable file.
 
 ```bash
@@ -304,9 +354,11 @@ HelloWorld
 ```
 
 ### The result:
+
 ![Result][result]
 
 repo URL:
+
 ```
 https://github.com/yoricsv/001_2_CppHelloWorld_std17-O2.git
 ```
