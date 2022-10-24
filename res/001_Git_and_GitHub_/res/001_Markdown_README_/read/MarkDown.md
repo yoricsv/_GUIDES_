@@ -1,6 +1,6 @@
-## [_GUIDES_][guides] > **MARKDOWN** *(Cheat-sheet)*
+# [_GUIDES_][guides] > **MARKDOWN** _(Cheat-sheet)_
 
-### <p align=center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] <br/> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
+## <p align = center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] </br> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
 
 <!--
 * [_GUIDES_][guides]
@@ -29,9 +29,9 @@
 ---
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
-# <p align=center><b>MARKDOWN</b></p>
+## <p align = center><b>MARKDOWN</b></p>
 
-### CONTENTS:
+### CONTENTS
 
 * Headers
 * Emphasis
@@ -41,7 +41,7 @@
 * Blockquotes
 * Inline code
 * GitHub Flavored Markdown
-* Syntax highlighting *(See: [List of language aliases][aliases])*
+* Syntax highlighting _(See: [List of language aliases][aliases])_
 * Task Lists
 * Tables
 * SHA references
@@ -52,7 +52,7 @@
 
 ---
 
-# Syntax guide
+## Syntax guide
 
 Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like # or *.
 
@@ -70,7 +70,7 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
 
 ## Headers
 
-### Example:
+### Example
 
 ```pandoc
 # This is an <h1> tag
@@ -81,28 +81,28 @@ Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com 
 ###### This is an <h6> tag
 ```
 
-#### *`Would become (result)`*:
+#### _`Would become (result)`_
 
-# This is an \<h1> tag
+# This is an `<h1>` tag
 
-## This is an \<h2> tag
+## This is an `<h2>` tag
 
-### This is an \<h3> tag
+### This is an `<h3>` tag
 
-#### This is an \<h4> tag
+#### This is an `<h4>` tag
 
-##### This is an \<h5> tag
+##### This is an `<h5>` tag
 
-###### This is an \<h6> tag
+###### This is an `<h6>` tag
 
 ---
 
 ## Emphasis
 
 You can use an asterisk or an underscore (both apply).
-Use one character for *Italic*, double character - **Bold**
+Use one character for _Italic_, double character - **Bold**
 
-### Example:
+Example:
 
 ```pandoc
 *This text will be italic*
@@ -114,13 +114,15 @@ __This will also be bold__
 _You **can** combine them_
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
-*This text will be italic* <br/>
+_This text will be italic_
+
 _This will also be italic_
 
-**This text will be bold** <br/>
-__This will also be bold__
+**This text will be bold**
+
+**This will also be bold**
 
 _You **can** combine them_
 
@@ -128,7 +130,7 @@ _You **can** combine them_
 
 ## Lists
 
-### Example:
+Example:
 
 ```pandoc
 // Unordered List
@@ -145,39 +147,72 @@ _You **can** combine them_
   2. Item 2b
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
-### Unordered List
+Unordered List:
 
-* *Item 1*
-* *Item 2*
-  * *Item 2a*
-  * *Item 2b*
+* _Item 1_
+* _Item 2_
+  * _Item 2a_
+  * _Item 2b_
 
-### Ordered List:
+Ordered List:
 
-1. *Item 1*
-2. *Item 2*
-3. *Item 3*
-   1. *Item 3a*
-   2. *Item 3b*
+1. _Item 1_
+2. _Item 2_
+3. _Item 3_
+   1. _Item 3a_
+   2. _Item 3b_
 
 ---
 
 ## Images
 
 Syntax:
-<br/>
-**!\[** <*Alt Text*> **]\(** <*url*> **)**
-<br>
-or
-<br/>
-**!\[** <*Alt Text*> **]\[** <*link number*> **]**
-<br/>
-**\[**<*link number*>**]:** \<*url*>
-<br>
 
-### Example:
+**!\[** <_Alt Text_> **]\(** <_url_> **)**
+
+or
+
+**!\[** <_Alt Text_> **]\[** <_link number_> **]**
+
+**\[**<_link number_>**]:** \<_url_>
+
+```md
+# __Vagrant__
+
+<!-- Use attribute style -->
+<img alt   = "Vagrant"
+     src   = "../img/vagrant.svg"
+     style = "width:150px"
+/>
+
+<!-- Use attribute width -->
+<img alt   = "Vagrant"
+     src   = "../img/vagrant.svg"
+     width = "150px"
+/>
+
+<!-- Use style css -->
+![Vagrant](../img/vagrant.svg)
+
+<img alt   = "vagrant"
+     class = "image_width-150px"
+     src   = "../img/vagrant.svg"
+/>
+
+<style type = "text/css"
+>
+    img[alt = "Vagrant"] {
+        width: 150px;
+    }
+    .image_width-150px {
+        width: 150px;
+    }
+</style>
+```
+
+Example:
 
 ```pandoc
 // Variant 1:
@@ -189,7 +224,7 @@ or
 [5]: ../img/MarkDownLogo.png
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
 ![MarkDown Logo](../img/MarkDownLogo.png)
 
@@ -199,27 +234,24 @@ or
 
 ### Automatic linking URLs
 
-Any URL (like https://github.com) will be automatically converted into a clickable link. There is nothing to do.
-<br/>
+Any URL (like [https://github.com][github]) will be automatically converted into a clickable link. There is nothing to do.
+</br>
 
 ### Manually linking URLs
 
 **Syntax:**
-<br/>
 
-**\[** <*Alt Text*> **]\(** <*url*> **)**
-<br>
+**\[** <_Alt Text_> **]\(** <_url_> **)**
 
-**or**
-<br/>
+or
 
-**\[** <*Alt Text*> **]\[** <*link number*> **]**
-<br/>
+**\[** <_Alt Text_> **]\[** <_link number_> **]**
+</br>
 
-**\[**<*link number*>**]:** \<*url*>
-<br>
+**\[**<_link number_>**]:** \<_url_>
+</br>
 
-### Example:
+Example:
 
 ```pandoc
 // Variant 1 (Ordinary url): 
@@ -234,16 +266,13 @@ https://github.com
 [13]: https://github.com
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
-*Automatic linking:*
-<br/>
+_Automatic linking:_
 
-https://github.com
-<br/>
+[https://github.com][github]
 
-*Manually linking:*
-<br/>
+_Manually linking:_
 
 [GitHub](https://github.com)
 
@@ -251,13 +280,13 @@ https://github.com
 
 [GitHub][github]’s apply unique Markdown extensions
 
-[github]: https://github.com 
+[github]: https://github.com
 
 ---
 
 ## Blockquotes
 
-### Example:
+Example:
 
 ```pandoc
 As Kanye West said:
@@ -265,7 +294,7 @@ As Kanye West said:
 > the present is our past.
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
 As Kanye West said:
 > We're living the future so
@@ -275,13 +304,13 @@ As Kanye West said:
 
 ## Inline code
 
-### Example:
+Example:
 
 ```pandoc
 I think you should use an `<addr>` element here instead.
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
 I think you should use an `<addr>` element here instead.
 
@@ -291,7 +320,7 @@ I think you should use an `<addr>` element here instead.
 
 GitHub.com uses its own version of the Markdown syntax that provides an additional set of useful features, many of which make it easier to work with content on GitHub.com.
 
-> ***Note***: that some features of *GitHub Flavored Markdown* are only available in the descriptions and comments of Issues and Pull Requests. These include @mentions as well as references to SHA-1 hashes, Issues, and Pull Requests. Task Lists are also available in Gist comments and in Gist Markdown files.
+> **_NOTE:_**</br>that some features of _GitHub Flavored Markdown_ are only available in the descriptions and comments of Issues and Pull Requests. These include @mentions as well as references to SHA-1 hashes, Issues, and Pull Requests. Task Lists are also available in Gist comments and in Gist Markdown files.
 
 ---
 
@@ -299,7 +328,7 @@ GitHub.com uses its own version of the Markdown syntax that provides an addition
 
 Here’s an example of how you can use syntax highlighting with [GitHub Flavored Markdown][formatting]:
 
-### See [List of language aliases][aliases] that provide syntax highlighting in the next conctruction:
+### See [List of language aliases][aliases] that provide syntax highlighting in the next conctruction
 
 ```pandoc
 ``` <Alias for Markdown>
@@ -309,7 +338,7 @@ Here’s an example of how you can use syntax highlighting with [GitHub Flavored
 '``
 ```
 
-### Example:
+Example:
 
 ```javascript
 function fancyAlert(arg)
@@ -320,7 +349,7 @@ function fancyAlert(arg)
 }
 ```
 
-### You can also simply indent your code by four spaces:
+### You can also simply indent your code by four spaces
 
 ```javascript
 function fancyAlert(arg)
@@ -334,7 +363,7 @@ function fancyAlert(arg)
 }
 ```
 
-### Here’s an example of Python code `without` syntax highlighting:
+### Here’s an example of Python code `without` syntax highlighting
 
 ```
 def foo():
@@ -342,7 +371,7 @@ def foo():
         return True
 ```
 
-### Here’s `with` syntax highlighting:
+### Here’s `with` syntax highlighting
 
 ```python
 def foo():
@@ -354,7 +383,7 @@ def foo():
 
 ## Task Lists
 
-### Example:
+Example:
 
 ```pandoc
 - [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
@@ -365,12 +394,12 @@ def foo():
 
 If you include a task list in the first comment of an Issue, you will get a handy progress indicator in your issue list. It also works in Pull Requests!
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [x] list syntax required (any unordered or ordered list supported)
-- [x] this is a complete item
-- [ ] this is an incomplete item
+* [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+* [x] list syntax required (any unordered or ordered list supported)
+* [x] this is a complete item
+* [ ] this is an incomplete item
 
 ---
 
@@ -378,7 +407,7 @@ If you include a task list in the first comment of an Issue, you will get a hand
 
 You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
 
-### Example:
+Example:
 
 ```pandoc
 First Header | Second Header
@@ -387,7 +416,7 @@ Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
 First Header | Second Header
 ------------ | -------------
@@ -400,15 +429,15 @@ Content in the first column | Content in the second column
 
 Any reference to a commit's [SHA-1 hash][sha1] will be automatically converted into a link to that commit on GitHub.
 
-### Example:
+Example:
 
-```
+```bash
 16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
 16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
@@ -420,17 +449,17 @@ mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
 
 Any number that refers to an Issue or Pull Request will be automatically converted into a link.
 
-### Example:
+Example:
 
-```
-#1
+```bash
+# 1
 github-flavored-markdown#1
 yoricsv/github-flavored-markdown#1
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
-#1
+# 1
 github-flavored-markdown#1
 yoricsv/github-flavored-markdown#1
 
@@ -438,7 +467,7 @@ yoricsv/github-flavored-markdown#1
 
 ## Username @mentions
 
-Typing an ``@`` symbol, followed by a username, will notify that person to come and view the comment. This is called an `@mention`, because you're *mentioning* the individual. You can also @mention teams within an organization.
+Typing an ``@`` symbol, followed by a username, will notify that person to come and view the comment. This is called an `@mention`, because you're _mentioning_ the individual. You can also @mention teams within an organization.
 
 ---
 
@@ -446,13 +475,13 @@ Typing an ``@`` symbol, followed by a username, will notify that person to come 
 
 Any word wrapped with two tildes will appear **crossed out**
 
-### Example:
+Example:
 
 ```pandoc
 ~~this is some text~~
 ```
 
-#### *`Would become (result)`*:
+_`Would become (result)`_
 
 ~~this is some text~~
 
@@ -464,7 +493,7 @@ GitHub supports [emoji][emoji]
 
 To see a list of every image we support, check out the [Emoji Cheat Sheet][emojiCheat].
 
-### Example:
+Example:
 
 ico | shortcode | ico | shortcode
 --- | --- | --- | ---
@@ -507,13 +536,10 @@ ico | shortcode | ico | shortcode
 * [Emoji Cheat Sheet][emojiCheat]
 -->
 
-[gist]: https://gist.github.com/
-[writing]: https://help.github.com/categories/writing-on-github/
-[github]: https://github.com 
+[gist]:       https://gist.github.com/
+[writing]:    https://help.github.com/categories/writing-on-github/
 [formatting]: https://help.github.com/articles/basic-writing-and-formatting-syntax/
-[aliases]: MarkDown_syntax_higlight_(short).md
-[sha1]: http://en.wikipedia.org/wiki/SHA-1
+[aliases]:    MarkDown_syntax_higlight_(short).md
+[sha1]:       http://en.wikipedia.org/wiki/SHA-1
 [emoji]:      https://help.github.com/articles/basic-writing-and-formatting-syntax/#using-emoji
 [emojiCheat]: https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
-
----
