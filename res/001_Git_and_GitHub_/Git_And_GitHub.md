@@ -34,8 +34,10 @@
 ### CONTENTS:
 * [Git Commands][1] *(Cheat sheet)*
 * [MarkDown][2] *(Cheat sheet)*
+* [MarkDown Rules][3] *(Cheat sheet)*
 
 ---
+
 ### Git is a distributed version control system.
 Git was created in 2005 by Linus Torvalds to help control the Linux kernel's development.
 
@@ -49,7 +51,7 @@ This way, different team members can copy it locally, and everyone will have a c
 
 Git has many different commands you can use. The sixty [most commonly used commands][10].
 
-![Git scheme][3]
+![Git scheme][4]
 
 <!--
 * [Git Commands][1] *(Cheat sheet)*
@@ -59,6 +61,7 @@ Git has many different commands you can use. The sixty [most commonly used comma
 
 [1]: res/002_Git_Commands_/read/Git_Commands.md
 [2]: res/001_Markdown_README_/read/MarkDown.md
-[3]: res/002_Git_Commands_/img/CZ62a.png
+[3]: res/001_Markdown_README_/read/markdown_rules.md
+[4]: res/002_Git_Commands_/img/CZ62a.png
 
 ---
