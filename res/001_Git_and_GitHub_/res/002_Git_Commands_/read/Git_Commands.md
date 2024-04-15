@@ -1,78 +1,149 @@
-## [_GUIDES_][guides] > **Git Commands** *(Cheat-sheet)*
+# [GUIDES](../../../../../README.md) -> __Git Commands *(Cheat-sheet)*__
 
-### <p align=center>[Git & GitHub][git] | [Windows][win] | [Linux][linux] | [Networks][nets] <br/> [Programming][progLang] | [Databases][db] | [Docker & Kubernetes][docker] | [Embedded systems][embSys] | [CMake][CMake] </p>
+<!-- ## <p align=center>[Git & GitHub][navGit] | [Windows][navWin] | [Linux][navNix] | [Networks][navNet] <br/> [Programming][navPLn] | [Databases][navDBs] | [Docker & Kubernetes][navDkr] | [Embedded systems][navEmS] | [CMake][navCMk] </p> -->
+
+## __List of Guides__
+
+| Guide Name                    |   |  Guide Name                   |   | Guide Name                    |
+|-------------------------------|---|-------------------------------|---|-------------------------------|
+| [Windows][navWin]             | * | [Linux][navNix]               | * | [Networks][navNet]            |
+| [Databases][navDBs]           | * | [Programming][navPLn]         | * | [Git & GitHub][navGit]        |
+| [CMake][navCMk]               | * | [Docker & Kubernetes][navDkr] | * | [Embedded systems][navEmS]    |
 
 <!--
-* [_GUIDES_][guides]
-* [Git & GitHub][git]
-* [Windows][win]
-* [Linux][linux] (Unix)
-* [Networks][nets]
-* [Programming Languages][progLang]
-* [Databases][db]
-* [Docker & Kubernetes][docker]
-* [Embedded systems][embSys]
-* [CMake][CMake]
+- [Windows][navWin]
+- [Linux][navNix]
+- [Networks][navNet]
+- [Databases][navDBs]
+- [Programming][navPLn]
+- [Git & GitHub][navGit]
+- [CMake][navCMk]
+- [Docker & Kubernetes][navDkr]
+- [Embedded systems][navEmS]
 -->
 
-[guides]:   ../../../../../README.md
-[git]:      ../../../Git_And_GitHub.md
-[win]:      ../../../../002_Windows_/Windows.md
-[linux]:    ../../../../003_Linux_(Unix)_/Linux_(Unix).md
-[nets]:     ../../../../004_Networks_/Networks.md
-[progLang]: ../../../../005_Programming_languages_/Programming.md
-[db]:       ../../../../006_Databases_/Databases.md
-[docker]:   ../../../../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
-[embSys]:   ../../../../008_Embedded_systems_/Embedded_systems.md
-[CMake]:    ../../../../009_CMake_/CMake_Tutorial.md
+[navWin]:   ../../../../002_Windows_/Windows.md
+[navNix]:   ../../../../003_Linux_(Unix)_/Linux_(Unix).md
+[navNet]:   ../../../../004_Networks_/Networks.md
+[navDBs]:   ../../../../006_Databases_/Databases.md
+[navPLn]:   ../../../../005_Programming_languages_/Programming.md
+[navGit]:   ../../../Git_And_GitHub.md
+[navCMk]:   ../../../../009_CMake_/CMake_Tutorial.md
+[navDkr]:   ../../../../007_Docker_and_Kubernetes_/Docker_and_Kubernates.md
+[navEmS]:   ../../../../008_Embedded_systems_/Embedded_systems.md
 
 ---
 <!-- ---------------------------------- * Navigation * ---------------------------------- -->
 
-# <p align=center><b>The most Commonly used commands</b> <i>(Cheat Sheet)</i></p>
+- [GUIDES -\> __Git Commands *(Cheat-sheet)*__](#guides---git-commands-cheat-sheet)
+  - [__List of Guides__](#list-of-guides)
+  - [__The most Commonly used commands *(Cheat Sheet)*__](#the-most-commonly-used-commands-cheat-sheet)
+  - [Git Setup](#git-setup)
+    - [Create a __new Git repository__ from an existing directory](#create-a-new-git-repository-from-an-existing-directory)
+    - [__Clone a repository__ *(local or remote via HTTP/SSH)*](#clone-a-repository-local-or-remote-via-httpssh)
+    - [Clone a repository __into a specified folder__ on your local machine](#clone-a-repository-into-a-specified-folder-on-your-local-machine)
+  - [Git Configuration](#git-configuration)
+    - [__Display__ an information about __configuration__ including user name and email](#display-an-information-about-configuration-including-user-name-and-email)
+    - [Attach an __author name__ to all commits that will appear in the version history](#attach-an-author-name-to-all-commits-that-will-appear-in-the-version-history)
+    - [Attach an __email address__ to all commits by the current user](#attach-an-email-address-to-all-commits-by-the-current-user)
+    - [Apply Git’s automatic __command line coloring__ which helps you keep track and revise repository changes](#apply-gits-automatic-command-line-coloring-which-helps-you-keep-track-and-revise-repository-changes)
+    - [Create a __shortcut__ (__alias__) for a Git command](#create-a-shortcut-alias-for-a-git-command)
+    - [Set a __default text editor__](#set-a-default-text-editor)
+    - [Open Git’s __global configuration file__](#open-gits-global-configuration-file)
+  - [Ignoring patterns](#ignoring-patterns)
+    - [__Save a file__ with desired patterns as .gitignore with either direct string matches or wildcard globs](#save-a-file-with-desired-patterns-as-gitignore-with-either-direct-string-matches-or-wildcard-globs)
+    - [System __wide ignore pattern__ for all local repositories](#system-wide-ignore-pattern-for-all-local-repositories)
+  - [Managing Files](#managing-files)
+    - [Show the __state of the current directory__ *(list staged, unstaged, and untracked files)*](#show-the-state-of-the-current-directory-list-staged-unstaged-and-untracked-files)
+    - [List of the __commit history__ of the current branch](#list-of-the-commit-history-of-the-current-branch)
+    - [List of the __file / folder history__ including of the changes (diffs)](#list-of-the-file--folder-history-including-of-the-changes-diffs)
+    - [List of __all commits from all branches__](#list-of-all-commits-from-all-branches)
+    - [__Compare two branches__ by showing which commits from the first branch are missing from the second branch](#compare-two-branches-by-showing-which-commits-from-the-first-branch-are-missing-from-the-second-branch)
+    - [Examine the difference between the __working directory and the index__](#examine-the-difference-between-the-working-directory-and-the-index)
+    - [Explore the difference between the __last commit and the index__](#explore-the-difference-between-the-last-commit-and-the-index)
+    - [Explore the difference __what is staged but not yet__ committed\_\_](#explore-the-difference-what-is-staged-but-not-yet-committed__)
+    - [See the difference between the __last commit and the working directory__](#see-the-difference-between-the-last-commit-and-the-working-directory)
+    - [See the difference between the __two commits__](#see-the-difference-between-the-two-commits)
+    - [See the difference between the __two branches__](#see-the-difference-between-the-two-branches)
+    - [See the __date of last changes__ and the __author__ of the file](#see-the-date-of-last-changes-and-the-author-of-the-file)
+    - [Display the __content and metadata__ of an object *(blob, tree, tag or commit, SHA)*](#display-the-content-and-metadata-of-an-object-blob-tree-tag-or-commit-sha)
+    - [Display the __commit__ and/or __file changes__](#display-the-commit-andor-file-changes)
+  - [Tracking path changes](#tracking-path-changes)
+    - [__Delete the file__ from project and stage the removal for commit](#delete-the-file-from-project-and-stage-the-removal-for-commit)
+    - [__Change an existing file path__ and stage the move](#change-an-existing-file-path-and-stage-the-move)
+    - [__Show__ all commit logs with __indication of any paths that moved__](#show-all-commit-logs-with-indication-of-any-paths-that-moved)
+  - [Git Branches](#git-branches)
+    - [List of __all branches__ in the repository](#list-of-all-branches-in-the-repository)
+    - [List of __all remote branches__](#list-of-all-remote-branches)
+    - [List of __all local and remote branches__](#list-of-all-local-and-remote-branches)
+    - [__Create a new branch__ under a specified name](#create-a-new-branch-under-a-specified-name)
+    - [__Switch to a branch__ under a specified name *(if it doesn’t exist, a new one will be created)*](#switch-to-a-branch-under-a-specified-name-if-it-doesnt-exist-a-new-one-will-be-created)
+    - [__Delete__ a local branch](#delete-a-local-branch)
+    - [__Rename__ a branch you are __currently working in__](#rename-a-branch-you-are-currently-working-in)
+    - [__Merge__ the specified branch with the current branch](#merge-the-specified-branch-with-the-current-branch)
+    - [__Merge__ the specified branch\_a to the current branch\_b](#merge-the-specified-branch_a-to-the-current-branch_b)
+  - [Making Changes](#making-changes)
+    - [__Stage changes__ for the next commit](#stage-changes-for-the-next-commit)
+    - [__Stage everything__ in the directory for an initial commit](#stage-everything-in-the-directory-for-an-initial-commit)
+    - [__Commit staged snapshots__ in the version history with a descriptive message included in the command](#commit-staged-snapshots-in-the-version-history-with-a-descriptive-message-included-in-the-command)
+    - [__Commit all tracked__ files with a descriptive message](#commit-all-tracked-files-with-a-descriptive-message)
+    - [__Add the Tag__ to the current commit](#add-the-tag-to-the-current-commit)
+  - [Undoing Changes](#undoing-changes)
+    - [__Undo changes__ in a file or directory and create a new commit with the git revert command](#undo-changes-in-a-file-or-directory-and-create-a-new-commit-with-the-git-revert-command)
+    - [Unstage a file without overwriting changes](#unstage-a-file-without-overwriting-changes)
+    - [__Clear staging area__ up to the last commit](#clear-staging-area-up-to-the-last-commit)
+    - [__Clear staging area__, rewrite working tree from specified commit](#clear-staging-area-rewrite-working-tree-from-specified-commit)
+    - [Undo any changes introduced __after the specified commit__](#undo-any-changes-introduced-after-the-specified-commit)
+    - [__Show untracked files__ which will be removed when you run `git clean` *(do a dry run)*](#show-untracked-files-which-will-be-removed-when-you-run-git-clean-do-a-dry-run)
+    - [__Remove__ untracked files](#remove-untracked-files)
+  - [Rewriting History](#rewriting-history)
+    - [__Replace the last commit__ with a combination of the staged changes and the last commit combined](#replace-the-last-commit-with-a-combination-of-the-staged-changes-and-the-last-commit-combined)
+    - [__Rebase the current branch__ with the specified base *(it can be a branch name, tag, reference to a HEAD, or a commit ID)*](#rebase-the-current-branch-with-the-specified-base-it-can-be-a-branch-name-tag-reference-to-a-head-or-a-commit-id)
+    - [List __changes made to the HEAD__ of the local repository](#list-changes-made-to-the-head-of-the-local-repository)
+  - [Temporary commits](#temporary-commits)
+    - [__Save modified and staged changes__](#save-modified-and-staged-changes)
+    - [__List stack-order__ of stashed files changes](#list-stack-order-of-stashed-files-changes)
+    - [__Write working from top__ of the stash stack](#write-working-from-top-of-the-stash-stack)
+    - [__Discard the changes__ from top of the stash stack](#discard-the-changes-from-top-of-the-stash-stack)
+  - [Remote Repositories](#remote-repositories)
+    - [Create a new __connection to a remote repository__ *(give it a name to serve as a shortcut to the URL)*](#create-a-new-connection-to-a-remote-repository-give-it-a-name-to-serve-as-a-shortcut-to-the-url)
+    - [__Fetch a branch__ from a remote repository *(without merging)*](#fetch-a-branch-from-a-remote-repository-without-merging)
+    - [__Fetch a repository__ and merge it with the local copy](#fetch-a-repository-and-merge-it-with-the-local-copy)
+    - [__Fetch a repository__ and rebase it with the local copy](#fetch-a-repository-and-rebase-it-with-the-local-copy)
+    - [__Push a branch__ to a remote repository with all its commits and objects](#push-a-branch-to-a-remote-repository-with-all-its-commits-and-objects)
+  - [Git Cheat Sheet PDF](#git-cheat-sheet-pdf)
 
-### CONTENTS:
-
-* Git Setup
-* Git Configuration
-* Ignoring patterns
-* Managing Files
-* Tracking path changes
-* Git Branches
-* Making Changes
-* Undoing Changes
-* Rewriting History
-* Temporary commits
-* Remote Repositories
-* Git Cheat Sheet PDF
+## __The most Commonly used commands *(Cheat Sheet)*__
 
 ---
 
-### In case you **don't quite know** something, use the help:
+> __NOTE:__
+>
+> In case you __don't quite know__ something, use the help
+>
+> ```git
+> git command --help
+> ```
 
-```git
-git command --help
-```
-
-![Git stage scheme][imgStages]
+![Git stage scheme](../img/CZ62a.png)
 
 ---
 
 ## Git Setup
 
-### Create a **new Git repository** from an existing directory:
+### Create a __new Git repository__ from an existing directory
 
 ```git
 git init [directory]
 ```
 
-### **Clone a repository** *(local or remote via HTTP/SSH)*:
+### __Clone a repository__ *(local or remote via HTTP/SSH)*
 
 ```git
 git clone [repo / URL]
 ```
 
-### Clone a repository **into a specified folder** on your local machine:
+### Clone a repository __into a specified folder__ on your local machine
 
 ```git
 git clone [repo / URL] [folder]
@@ -82,45 +153,45 @@ git clone [repo / URL] [folder]
 
 ## Git Configuration
 
-### **Display** an information about **configuration** including user name and email:
+### __Display__ an information about __configuration__ including user name and email
 
 ```git
 git config -l
 ```
 
-### Attach an **author name** to all commits that will appear in the version history:
+### Attach an __author name__ to all commits that will appear in the version history
 
 ```git
 git config --global user.name "[your_name]"
 ```
 
-### Attach an **email address** to all commits by the current user:
+### Attach an __email address__ to all commits by the current user
 
 ```git
 git config --global user.email "[email_address]"
 ```
 
-### Apply Git’s automatic **command line coloring** which helps you keep track and revise repository changes:
+### Apply Git’s automatic __command line coloring__ which helps you keep track and revise repository changes
 
 ```git
 git config --global color.ui auto
 ```
 
-### Create a **shortcut** (**alias**) for a Git command:
+### Create a __shortcut__ (__alias__) for a Git command
 
 ```git
 git config --global alias.[alias_name] [git_command]
 ```
 
-> ***NOTE:*** Git requires you to type out the entire command to perform actions. Setting shortcuts for commonly used commands can speed up and simplify development. For example, you can use the alias `st` for the status command by typing the command: **`git config --global alias.st status`**
+> __*NOTE:__* Git requires you to type out the entire command to perform actions. Setting shortcuts for commonly used commands can speed up and simplify development. For example, you can use the alias `st` for the status command by typing the command: __`git config --global alias.st status`__
 
-### Set a **default text editor**:
+### Set a __default text editor__
 
 ```git
 git config --system core.editor [text_editor]
 ```
 
-### Open Git’s **global configuration file**:
+### Open Git’s __global configuration file__
 
 ```git
 git config --global --edit
@@ -130,9 +201,9 @@ git config --global --edit
 
 ## Ignoring patterns
 
-*Preventing unintentional staging or commiting of files*
+Preventing unintentional staging or committing of files
 
-### **Save a file** with desired patterns as .gitignore with either direct string matches or wildcard globs:
+### __Save a file__ with desired patterns as .gitignore with either direct string matches or wildcard globs
 
 ```git
 logs/
@@ -140,7 +211,7 @@ logs/
 pattern*/
 ```
 
-### System **wide ignore pattern** for all local repositories:
+### System __wide ignore pattern__ for all local repositories
 
 ```git
 git config --global core.excludesfile [file]
@@ -150,85 +221,85 @@ git config --global core.excludesfile [file]
 
 ## Managing Files
 
-### Show the **state of the current directory** *(list staged, unstaged, and untracked files)*:
+### Show the __state of the current directory__ *(list staged, unstaged, and untracked files)*
 
 ```git
 git status
 ```
 
-### List of the **commit history** of the current branch:
+### List of the __commit history__ of the current branch
 
 ```git
 git log
 ```
 
-### List of the **file / folder history** including of the changes (diffs):
+### List of the __file / folder history__ including of the changes (diffs)
 
 ```git
 git log -p [file / directory]
 ```
 
-### List of **all commits from all branches**:
+### List of __all commits from all branches__
 
 ```git
 git log --all
 ```
 
-### **Compare two branches** by showing which commits from the first branch are missing from the second branch:
+### __Compare two branches__ by showing which commits from the first branch are missing from the second branch
 
 ```git
 git log [branch1]..[branch2]
 ```
 
-### Examine the difference between the **working directory and the index**:
+### Examine the difference between the __working directory and the index__
 
 ```git
 git diff
 ```
 
-### Explore the difference between the **last commit and the index**:
+### Explore the difference between the __last commit and the index__
 
 ```git
 get diff --cached
 ```
 
-### Explore the difference **what is staged but not yet** committed**:
+### Explore the difference __what is staged but not yet__ committed__
 
 ```git
 get diff --staged
 ```
 
-### See the difference between the **last commit and the working directory**:
+### See the difference between the __last commit and the working directory__
 
 ```git
 get diff HEAD
 ```
 
-### See the difference between the **two commits**:
+### See the difference between the __two commits__
 
 ```git
 get diff commit1 commit2
 ```
 
-### See the difference between the **two branches**:
+### See the difference between the __two branches__
 
 ```git
 get diff branch1 branch2
 ```
 
-### See the **date of last changes** and the **author** of the file:
+### See the __date of last changes__ and the __author__ of the file
 
 ```git
 get blame [file]
 ```
 
-### Display the **content and metadata** of an object *(blob, tree, tag or commit, SHA)*:
+### Display the __content and metadata__ of an object *(blob, tree, tag or commit, SHA)*
 
 ```git
 git show [object]
 ```
 
-### Display the **commit** and/or **file changes**:
+### Display the __commit__ and/or __file changes__
 
 ```git
 git show [commit] : [file]
@@ -238,21 +309,21 @@ git show [commit] : [file]
 
 ## Tracking path changes
 
-*Versioning file remove and path changes*
+Versioning file remove and path changes
 
-### **Delete the file** from project and stage the removal for commit:
+### __Delete the file__ from project and stage the removal for commit
 
 ```git
 git rm [file]
 ```
 
-### **Change an existing file path** and stage the move:
+### __Change an existing file path__ and stage the move
 
 ```git
 git mv [existing_path][new_path]
 ```
 
-### **Show** all commit logs with **indication of any paths that moved**:
+### __Show__ all commit logs with __indication of any paths that moved__
 
 ```git
 git log --stat -M
@@ -262,57 +333,66 @@ git log --stat -M
 
 ## Git Branches
 
-### List of **all branches** in the repository:
+### List of __all branches__ in the repository
 
 ```git
 git branch
 ```
 
-### List of **all remote branches**:
+### List of __all remote branches__
 
 ```git
 git branch -aa
 ```
 
-### List of **all local and remote branches**:
+### List of __all local and remote branches__
 
 ```git
 git branch -av
 ```
 
-### **Create a new branch** under a specified name:
+### __Create a new branch__ under a specified name
 
 ```git
 git branch [new_branch]
 ```
 
-### **Switch to a branch** under a specified name *(if it doesn’t exist, a new one will be created)*:
+### __Switch to a branch__ under a specified name *(if it doesn’t exist, a new one will be created)*
 
 ```git
 git checkout [branch]
 ```
 
-> ***NOTE:*** For a more detailed tutorial on working with Git branches, you can refer to our article on [How to Create a New Branch][newBranch] or [How to Switch Branches in Git][gitBranch].
+> __NOTE:__
+>
+> For a more detailed tutorial on working with Git branches, you can refer to our article on [How to Create a New Branch][gitNBrnch] or [How to Switch Branches in Git][gitSwitch].
 
-### [**Delete**][gitDelete] a local branch:
+[gitNBrnch]:    https://phoenixnap.com/kb/git-create-new-branch
+[gitSwitch]:    https://phoenixnap.com/kb/git-switch-branch
+
+### [__Delete__][gitDelete] a local branch
 
 ```git
 git branch -d [branch]
 ```
 
-### [**Rename**][gitRename] a branch you are **currently working in**:
+[gitDelete]:    https://phoenixnap.com/kb/delete-remote-and-local-git-branch
+
+### [__Rename__][gitRename] a branch you are __currently working in__
 
 ```git
 git branch -m [new_branch_name]
 ```
 
-### **Merge** the specified branch with the current branch:
+[gitRename]:    https://phoenixnap.com/kb/how-to-rename-git-branch-local-remote
+
+### __Merge__ the specified branch with the current branch
 
 ```git
 git merge [branch]
 ```
 
-### **Merge** the specified branch_a to the current branch_b:
+### __Merge__ the specified branch_a to the current branch_b
 
 ```git
 git checkout [branch_b]
@@ -323,31 +403,31 @@ git merge [branch_a]
 
 ## Making Changes
 
-### **Stage changes** for the next commit:
+### __Stage changes__ for the next commit
 
 ```git
 git add [file / directory]
 ```
 
-### **Stage everything** in the directory for an initial commit:
+### __Stage everything__ in the directory for an initial commit
 
 ```git
 git add .
 ```
 
-### **Commit staged snapshots** in the version history with a descriptive message included in the command:
+### __Commit staged snapshots__ in the version history with a descriptive message included in the command
 
 ```git
 git commit -m "[descriptive_message]"
 ```
 
-### **Commit all tracked** files with a descriptive message:
+### __Commit all tracked__ files with a descriptive message
 
 ```git
 git commit -am "[descriptive_message]"
 ```
 
-### **Add the Tag** to the current commit:
+### __Add the Tag__ to the current commit
 
 ```git
 git tag [tag]"
@@ -357,43 +437,47 @@ git tag [tag]"
 
 ## Undoing Changes
 
-### **Undo changes** in a file or directory and create a new commit with the [git revert][gitRevert] command:
+### __Undo changes__ in a file or directory and create a new commit with the [git revert][gitRevert] command
 
 ```git
 git revert [file/directory]
 ```
 
-### [Unstage a file][gitUnstage] without overwriting changes:
+[gitRevert]:    https://phoenixnap.com/kb/git-revert-last-commit
+
+### [Unstage a file][gitUnstag] without overwriting changes
 
 ```git
 git reset [file]
 ```
 
-### **Clear staging area** up to the last commit:
+[gitUnstag]:    https://phoenixnap.com/kb/git-unstage-files
+
+### __Clear staging area__ up to the last commit
 
 ```git
 git reset --hard
 ```
 
-### **Clear staging area**, rewrite working tree from specified commit:
+### __Clear staging area__, rewrite working tree from specified commit
 
 ```git
 git reset --hard [commit]
 ```
 
-### Undo any changes introduced **after the specified commit**:
+### Undo any changes introduced __after the specified commit__
 
 ```git
 git reset [commit]
 ```
 
-### **Show untracked files** which will be removed when you run `git clean` *(do a dry run)*:
+### __Show untracked files__ which will be removed when you run `git clean` *(do a dry run)*
 
 ```git
 git clean -n
 ```
 
-### **Remove** untracked files:
+### __Remove__ untracked files
 
 ```git
 git clean -f
@@ -403,19 +487,19 @@ git clean -f
 
 ## Rewriting History
 
-### **Replace the last commit** with a combination of the staged changes and the last commit combined:
+### __Replace the last commit__ with a combination of the staged changes and the last commit combined
 
 ```git
 git commit --amend
 ```
 
-### **Rebase the current branch** with the specified base *(it can be a branch name, tag, reference to a HEAD, or a commit ID)*:
+### __Rebase the current branch__ with the specified base *(it can be a branch name, tag, reference to a HEAD, or a commit ID)*
 
 ```git
 git rebase [branch]
 ```
 
-### List **changes made to the HEAD** of the local repository:
+### List __changes made to the HEAD__ of the local repository
 
 ```git
 git reflog
@@ -427,25 +511,25 @@ git reflog
 
 *Temporarily store modified and tracked files in order to change branches.*
 
-### **Save modified and staged changes**:
+### __Save modified and staged changes__
 
 ```git
 git stash
 ```
 
-### **List stack-order** of stashed files canges:
+### __List stack-order__ of stashed files changes
 
 ```git
 git stash list
 ```
 
-### **Write working from top** of the stash stack:
+### __Write working from top__ of the stash stack
 
 ```git
 git stash pop
 ```
 
-### **Discard the changes** from top of the stash stack:
+### __Discard the changes__ from top of the stash stack
 
 ```git
 git stash drop
@@ -455,63 +539,46 @@ git stash drop
 
 ## Remote Repositories
 
-### Create a new **connection to a remote repository** *(give it a name to serve as a shortcut to the URL)*:
+### Create a new __connection to a remote repository__ *(give it a name to serve as a shortcut to the URL)*
 
 ```git
 git remote add [name] [URL]
 ```
 
-### **Fetch a branch** from a remote repository *(without merging)*:
+### __Fetch a branch__ from a remote repository *(without merging)*
 
 ```git
 git fetch [remote_repo] [branch]
 ```
 
-### **Fetch a repository** and merge it with the local copy:
+### __Fetch a repository__ and merge it with the local copy
 
 ```git
 git pull [remote_repo]
 ```
 
-### **Fetch a repository** and rebase it with the local copy:
+### __Fetch a repository__ and rebase it with the local copy
 
 ```git
 git pull --rebase
 ```
 
-### **Push a branch** to a remote repository with all its commits and objects:
+### __Push a branch__ to a remote repository with all its commits and objects
 
 ```git
 git push [remote_repo] [branch]
 ```
 
-> ***NOTE:*** When a particular remote is no longer needed, you can [remove a git remote from a repository][gitRemove].
+> __NOTE:__
+>
+> When a particular remote is no longer needed, you can [remove a git remote from a repository][gitRemove].
+
+[gitRemove]:    https://phoenixnap.com/kb/git-remove-remote
 
 ---
 
-## [Git Cheat Sheet PDF][pdfCommands]
+## [Git Cheat Sheet PDF][gitPDFCmd]
 
-For future use, you can refer to the one-page Git Commands Reference. Click the [Download][pdfCommands] Cheat Sheet button to save the Git Commands PDF.
-<!--
-* [Create New Branch][newBranch]
-* [Switch Branches][gitBranch]
-* [Delete][gitDelete]
-* [Rename][gitRename]
-* [Revert][gitRevert]
-* [Unstaged][gitUnstage]
-* [Remove][gitRemove]
-* [Download][pdfCommands]
-* ![Git stage scheme][imgStages]
--->
+For future use, you can refer to the one-page Git Commands Reference. Click the [Download][gitPDFCmd] Cheat Sheet button to save the Git Commands PDF.
 
-[newBranch]:   https://phoenixnap.com/kb/git-create-new-branch
-[gitBranch]:   https://phoenixnap.com/kb/git-switch-branch
-[gitDelete]:   https://phoenixnap.com/kb/delete-remote-and-local-git-branch
-[gitRename]:   https://phoenixnap.com/kb/how-to-rename-git-branch-local-remote
-[gitRevert]:   https://phoenixnap.com/kb/git-revert-last-commit
-[gitUnstage]:  https://phoenixnap.com/kb/git-unstage-files
-[gitRemove]:   https://phoenixnap.com/kb/git-remove-remote
-[pdfCommands]: ../files/git-command.pdf
-[imgStages]:   ../img/CZ62a.png
-
----
+[gitPDFCmd]:    ../files/git-command.pdf
