@@ -647,79 +647,79 @@
 
 <!-- ^(?![A-z])(\s)*$ -->
 
-| ["0 - 9; A - B"][lst_0-B]         | ["C"][lst_C]                          |
-|-----------------------------------|---------------------------------------|
-| [1C Enterprise][001]              | [C][059]                              |
-| [4D][002]                         | [C#][060]                             |
-| [ABAP][003]                       | [C++][061]                            |
-| [ABAP CDS][004]                   | [C-ObjDump][062]                      |
-| [ABNF][005]                       | [C2hs Haskell][063]                   |
-| [ActionScript][006]               | [Cabal Config][064]                   |
-| [Ada][007]                        | [Cap'n Proto][065]                    |
-| [Adobe Font Metrics][008]         | [CartoCSS][066]                       |
-| [Agda][009]                       | [Ceylon][067]                         |
-| [AGS Script][010]                 | [Chapel][068]                         |
-| [AIDL][011]                       | [Charity][069]                        |
-| [AL][012]                         | [ChucK][070]                          |
-| [Alloy][013]                      | [CIL][071]                            |
-| [Alpine Abuild][014]              | [Cirru][072]                          |
-| [Altium Designer][015]            | [Clarion][073]                        |
-| [AMPL][016]                       | [Classic ASP][074]                    |
-| [AngelScript][017]                | [Clean][075]                          |
-| [Ant Build System][018]           | [Click][076]                          |
-| [ANTLR][019]                      | [CLIPS][077]                          |
-| [ApacheConf][020]                 | [Clojure][078]                        |
-| [Apex][021]                       | [Closure Templates][079]              |
-| [API Blueprint][022]              | [Cloud Firestore Security Rules][080] |
-| [APL][023]                        | [CMake][081]                          |
-| [Apollo Guidance Computer][024]   | [COBOL][082]                          |
-| [AppleScript][025]                | [CODEOWNERS][083]                     |
-| [Arc][026]                        | [CodeQL][084]                         |
-| [AsciiDoc][027]                   | [CoffeeScript][085]                   |
-| [ASL][028]                        | [ColdFusion][086]                     |
-| [ASN.1][029]                      | [ColdFusion CFC][087]                 |
-| [ASP.NET][030]                    | [COLLADA][088]                        |
-| [AspectJ][031]                    | [Common Lisp][089]                    |
-| [Assembly][032]                   | [Common Workflow Language][090]       |
-| [Astro][033]                      | [Component Pascal][091]               |
-| [Asymptote][034]                  | [CoNLL-U][092]                        |
-| [ATS][035]                        | [Cool][093]                           |
-| [Augeas][036]                     | [Coq][094]                            |
-| [AutoHotkey][037]                 | [Cpp-ObjDump][095]                    |
-| [AutoIt][038]                     | [Creole][096]                         |
-| [Avro IDL][039]                   | [Crystal][097]                        |
-| [Awk][040]                        | [CSON][098]                           |
-| [Ballerina][041]                  | [Csound][099]                         |
-| [BASIC][042]                      | [Csound Document][100]                |
-| [Batchfile][043]                  | [Csound Score][101]                   |
-| [Beef][044]                       | [CSS][102]                            |
-| [Befunge][045]                    | [CSV][103]                            |
-| [BibTeX][046]                     | [Cuda][104]                           |
-| [Bicep][047]                      | [CUE][105]                            |
-| [Bison][048]                      | [Cue Sheet][106]                      |
-| [BitBake][049]                    | [cURL Config][107]                    |
-| [Blade][050]                      | [CWeb][108]                           |
-| [BlitzBasic][051]                 | [Cycript][109]                        |
-| [BlitzMax][052]                   | [Cython][110]                         |
-| [Bluespec][053]                   |                                       |
-| [Boo][054]                        |                                       |
-| [Boogie][055]                     |                                       |
-| [Brainfuck][056]                  |                                       |
-| [Brightscript][057]               |                                       |
-| [Browserslist][058]               |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
-|                                   |                                       |
+| ["0 - 9; A - B"][lst_0-B]         | ["C"][lst_C]                          | ["D - F"][lst_D-F]                | ["G - H"][lst_G-H]                        |
+|-----------------------------------|---------------------------------------|-----------------------------------|-------------------------------------------|
+| [1C Enterprise][001]              | [C][059]                              | [D][111]                          | [G-code][170]                             |
+| [4D][002]                         | [C#][060]                             | [D-ObjDump][112]                  | [Game Maker Language][171]                |
+| [ABAP][003]                       | [C++][061]                            | [Dafny][113]                      | [GAML][172]                               |
+| [ABAP CDS][004]                   | [C-ObjDump][062]                      | [Darcs Patch][114]                | [GAMS][173]                               |
+| [ABNF][005]                       | [C2hs Haskell][063]                   | [Dart][115]                       | [GAP][174]                                |
+| [ActionScript][006]               | [Cabal Config][064]                   | [DataWeave][116]                  | [GCC Machine Description][175]            |
+| [Ada][007]                        | [Cap'n Proto][065]                    | [desktop][117]                    | [GDB][176]                                |
+| [Adobe Font Metrics][008]         | [CartoCSS][066]                       | [Dhall][118]                      | [GDScript][177]                           |
+| [Agda][009]                       | [Ceylon][067]                         | [Diff][119]                       | [GEDCOM][178]                             |
+| [AGS Script][010]                 | [Chapel][068]                         | [DIGITAL Command Language][120]   | [Gemfile.lock][179]                       |
+| [AIDL][011]                       | [Charity][069]                        | [dircolors][121]                  | [Genie][180]                              |
+| [AL][012]                         | [ChucK][070]                          | [DirectX 3D File][122]            | [Genshi][181]                             |
+| [Alloy][013]                      | [CIL][071]                            | [DM][123]                         | [Gentoo Ebuild][182]                      |
+| [Alpine Abuild][014]              | [Cirru][072]                          | [DNS Zone][124]                   | [Gentoo Eclass][183]                      |
+| [Altium Designer][015]            | [Clarion][073]                        | [Dockerfile][125]                 | [Gerber Image][184]                       |
+| [AMPL][016]                       | [Classic ASP][074]                    | [Dogescript][126]                 | [Gettext Catalog][185]                    |
+| [AngelScript][017]                | [Clean][075]                          | [DTrace][127]                     | [Gherkin][186]                            |
+| [Ant Build System][018]           | [Click][076]                          | [Dylan][128]                      | [Git Attributes][187]                     |
+| [ANTLR][019]                      | [CLIPS][077]                          | [E][129]                          | [Git Config][188]                         |
+| [ApacheConf][020]                 | [Clojure][078]                        | [E-mail][130]                     | [GLSL][189]                               |
+| [Apex][021]                       | [Closure Templates][079]              | [Eagle][131]                      | [Glyph][190]                              |
+| [API Blueprint][022]              | [Cloud Firestore Security Rules][080] | [Easybuild][132]                  | [Glyph Bitmap Distribution Format][191]   |
+| [APL][023]                        | [CMake][081]                          | [EBNF][133]                       | [GN][192]                                 |
+| [Apollo Guidance Computer][024]   | [COBOL][082]                          | [eC][134]                         | [Gnuplot][193]                            |
+| [AppleScript][025]                | [CODEOWNERS][083]                     | [Ecere Projects][135]             | [Go][194]                                 |
+| [Arc][026]                        | [CodeQL][084]                         | [ECL][136]                        | [Go Checksums][195]                       |
+| [AsciiDoc][027]                   | [CoffeeScript][085]                   | [ECLiPSe][137]                    | [Go Module][196]                          |
+| [ASL][028]                        | [ColdFusion][086]                     | [EditorConfig][138]               | [Golo][197]                               |
+| [ASN.1][029]                      | [ColdFusion CFC][087]                 | [Edje Data Collection][139]       | [Gosu][198]                               |
+| [ASP.NET][030]                    | [COLLADA][088]                        | [edn][140]                        | [Grace][199]                              |
+| [AspectJ][031]                    | [Common Lisp][089]                    | [Eiffel][141]                     | [Gradle][200]                             |
+| [Assembly][032]                   | [Common Workflow Language][090]       | [EJS][142]                        | [Grammatical Framework][201]              |
+| [Astro][033]                      | [Component Pascal][091]               | [Elixir][143]                     | [Graph Modeling Language][202]            |
+| [Asymptote][034]                  | [CoNLL-U][092]                        | [Elm][144]                        | [GraphQL][203]                            |
+| [ATS][035]                        | [Cool][093]                           | [Emacs Lisp][145]                 | [Graphviz (*DOT*)][204]                   |
+| [Augeas][036]                     | [Coq][094]                            | [EmberScript][146]                | [Groovy][205]                             |
+| [AutoHotkey][037]                 | [Cpp-ObjDump][095]                    | [EQ][147]                         | [Groovy Server Pages][206]                |
+| [AutoIt][038]                     | [Creole][096]                         | [Erlang][148]                     | [Hack][207]                               |
+| [Avro IDL][039]                   | [Crystal][097]                        | [F\*][149]                        | [Haml][208]                               |
+| [Awk][040]                        | [CSON][098]                           | [F#][150]                         | [Handlebars][209]                         |
+| [Ballerina][041]                  | [Csound][099]                         | [Factor][151]                     | [HAProxy][210]                            |
+| [BASIC][042]                      | [Csound Document][100]                | [Fancy][152]                      | [Harbour][211]                            |
+| [Batchfile][043]                  | [Csound Score][101]                   | [Fantom][153]                     | [Haskell][212]                            |
+| [Beef][044]                       | [CSS][102]                            | [Faust][154]                      | [Haxe][213]                               |
+| [Befunge][045]                    | [CSV][103]                            | [Fennel][155]                     | [HCL][214]                                |
+| [BibTeX][046]                     | [Cuda][104]                           | [FIGlet Font][156]                | [HiveQL][215]                             |
+| [Bicep][047]                      | [CUE][105]                            | [Filebench WML][157]              | [HLSL][216]                               |
+| [Bison][048]                      | [Cue Sheet][106]                      | [Filterscript][158]               | [HolyC][217]                              |
+| [BitBake][049]                    | [cURL Config][107]                    | [fish][159]                       | [HTML][218]                               |
+| [Blade][050]                      | [CWeb][108]                           | [Fluent][160]                     | [HTML+ECR][219]                           |
+| [BlitzBasic][051]                 | [Cycript][109]                        | [FLUX][161]                       | [HTML+EEX][220]                           |
+| [BlitzMax][052]                   | [Cython][110]                         | [Formatted][162]                  | [HTML+ERB][221]                           |
+| [Bluespec][053]                   |                                       | [Forth][163]                      | [HTML+PHP][222]                           |
+| [Boo][054]                        |                                       | [Fortran][164]                    | [HTML+Razor][223]                         |
+| [Boogie][055]                     |                                       | [Fortran Free Form][165]          | [HTTP][224]                               |
+| [Brainfuck][056]                  |                                       | [FreeBasic][166]                  | [HXML][225]                               |
+| [Brightscript][057]               |                                       | [FreeMarker][167]                 | [Hy][226]                                 |
+| [Browserslist][058]               |                                       | [Frege][168]                      | [HyPhy][227]                              |
+|                                   |                                       | [Futhark][169]                    |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
+|                                   |                                       |                                   |                                           |
 
 [lst_0-B]:  ./langsOnGit_0-b.md
 [001]:      ./langsOnGit_0-b.md#1c-enterprise
@@ -835,83 +835,131 @@
 [109]:      ./langsOnGit_c.md#cycript
 [110]:      ./langsOnGit_c.md#cython
 
- ["D - F"][lst_D-F]        | ["G - H"][lst_G-H]                | ["I - L"][lst_I-L]        |
----------------------------|-----------------------------------|---------------------------|
- D                         | G-code                            | IDL                       |
- D-ObjDump                 | Game Maker Language               | Idris                     |
- Dafny                     | GAML                              | Ignore List               |
- Darcs Patch               | GAMS                              | IGOR Pro                  |
- Dart                      | GAP                               | ImageJ Macro              |
- DataWeave                 | GCC Machine Description           | Inform 7                  |
- desktop                   | GDB                               | INI                       |
- Dhall                     | GDScript                          | Inno Setup                |
- Diff                      | GEDCOM                            | Io                        |
- DIGITAL Command Language  | Gemfile.lock                      | Ioke                      |
- dircolors                 | Genie                             | IRC log                   |
- DirectX 3D File           | Genshi                            | Isabelle                  |
- DM                        | Gentoo Ebuild                     | Isabelle ROOT             |
- DNS Zone                  | Gentoo Eclass                     | J                         |
- Dockerfile                | Gerber Image                      | JAR Manifest              |
- Dogescript                | Gettext Catalog                   | Jasmin                    |
- DTrace                    | Gherkin                           | Java                      |
- Dylan                     | Git Attributes                    | Java Properties           |
- E                         | Git Config                        | Java Server Pages (*JSP*) |
- E-mail                    | GLSL                              | JavaScript                |
- Eagle                     | Glyph                             | JavaScript+ERB            |
- Easybuild                 | Glyph Bitmap Distribution Format  | Jest Snapshot             |
- EBNF                      | GN                                | JFlex                     |
- eC                        | Gnuplot                           | Jinja                     |
- Ecere Projects            | Go                                | Jison                     |
- ECL                       | Go Checksums                      | Jison Lex                 |
- ECLiPSe                   | Go Module                         | Jolie                     |
- EditorConfig              | Golo                              | jq                        |
- Edje Data Collection      | Gosu                              | JSON                      |
- edn                       | Grace                             | JSON with Comments        |
- Eiffel                    | Gradle                            | JSON5                     |
- EJS                       | Grammatical Framework             | JSONiq                    |
- Elixir                    | Graph Modeling Language           | JSONLD                    |
- Elm                       | GraphQL                           | Jsonnet                   |
- Emacs Lisp                | Graphviz (*DOT*)                  | Julia                     |
- EmberScript               | Groovy                            | Jupyter Notebook          |
- EQ                        | Groovy Server Pages               | Kaitai Struct             |
- Erlang                    | Hack                              | KakouneScript             |
- F\*                       | Haml                              | KiCad Layout              |
- F#                        | Handlebars                        | KiCad Legacy Layout       |
- Factor                    | HAProxy                           | KiCad Schematic           |
- Fancy                     | Harbour                           | Kit                       |
- Fantom                    | Haskell                           | Kotlin                    |
- Faust                     | Haxe                              | KRL                       |
- Fennel                    | HCL                               | Kusto                     |
- FIGlet Font               | HiveQL                            | LabVIEW                   |
- Filebench WML             | HLSL                              | Lark                      |
- Filterscript              | HolyC                             | Lasso                     |
- fish                      | HTML                              | Latte                     |
- Fluent                    | HTML+ECR                          | Lean                      |
- FLUX                      | HTML+EEX                          | Less                      |
- Formatted                 | HTML+ERB                          | Lex                       |
- Forth                     | HTML+PHP                          | LFE                       |
- Fortran                   | HTML+Razor                        | LilyPond                  |
- Fortran Free Form         | HTTP                              | Limbo                     |
- FreeBasic                 | HXML                              | Linker Script             |
- FreeMarker                | Hy                                | Linux Kernel Module       |
- Frege                     | HyPhy                             | Liquid                    |
- Futhark                   |                                   | Literate Agda             |
-                           |                                   | Literate CoffeeScript     |
-                           |                                   | Literate Haskell          |
-                           |                                   | LiveScript                |
-                           |                                   | LLVM                      |
-                           |                                   | Logos                     |
-                           |                                   | Logtalk                   |
-                           |                                   | LOLCODE                   |
-                           |                                   | LookML                    |
-                           |                                   | LoomScript                |
-                           |                                   | LSL                       |
-                           |                                   | LTspice Symbol            |
-                           |                                   | Lua                       |
+[lst_D-F]:  ./langsOnGit_d-f.md
+[111]:      ./langsOnGit_d-f.md#d
+[112]:      ./langsOnGit_d-f.md#d-objdump
+[113]:      ./langsOnGit_d-f.md#dafny
+[114]:      ./langsOnGit_d-f.md#darcs-patch
+[115]:      ./langsOnGit_d-f.md#dart
+[116]:      ./langsOnGit_d-f.md#dataweave
+[117]:      ./langsOnGit_d-f.md#desktop
+[118]:      ./langsOnGit_d-f.md#dhall
+[119]:      ./langsOnGit_d-f.md#diff
+[120]:      ./langsOnGit_d-f.md#digital-command-language
+[121]:      ./langsOnGit_d-f.md#dircolors
+[122]:      ./langsOnGit_d-f.md#directx-3d-file
+[123]:      ./langsOnGit_d-f.md#dm
+[124]:      ./langsOnGit_d-f.md#dns-zone
+[125]:      ./langsOnGit_d-f.md#dockerfile
+[126]:      ./langsOnGit_d-f.md#dogescript
+[127]:      ./langsOnGit_d-f.md#dtrace
+[128]:      ./langsOnGit_d-f.md#dylan
+[129]:      ./langsOnGit_d-f.md#e
+[130]:      ./langsOnGit_d-f.md#e-mail
+[131]:      ./langsOnGit_d-f.md#eagle
+[132]:      ./langsOnGit_d-f.md#easybuild
+[133]:      ./langsOnGit_d-f.md#ebnf
+[134]:      ./langsOnGit_d-f.md#ec
+[135]:      ./langsOnGit_d-f.md#ecere-projects
+[136]:      ./langsOnGit_d-f.md#ecl
+[137]:      ./langsOnGit_d-f.md#eclipse
+[138]:      ./langsOnGit_d-f.md#editorconfig
+[139]:      ./langsOnGit_d-f.md#edje-data-collection
+[140]:      ./langsOnGit_d-f.md#edn
+[141]:      ./langsOnGit_d-f.md#eiffel
+[142]:      ./langsOnGit_d-f.md#ejs
+[143]:      ./langsOnGit_d-f.md#elixir
+[144]:      ./langsOnGit_d-f.md#elm
+[145]:      ./langsOnGit_d-f.md#emacs-lisp
+[146]:      ./langsOnGit_d-f.md#emberscript
+[147]:      ./langsOnGit_d-f.md#eq
+[148]:      ./langsOnGit_d-f.md#erlang
+[149]:      ./langsOnGit_d-f.md#f-1
+[150]:      ./langsOnGit_d-f.md#f
+[151]:      ./langsOnGit_d-f.md#factor
+[152]:      ./langsOnGit_d-f.md#fancy
+[153]:      ./langsOnGit_d-f.md#fantom
+[154]:      ./langsOnGit_d-f.md#faust
+[155]:      ./langsOnGit_d-f.md#fennel
+[156]:      ./langsOnGit_d-f.md#figlet-font
+[157]:      ./langsOnGit_d-f.md#filebench-wml
+[158]:      ./langsOnGit_d-f.md#filterscript
+[159]:      ./langsOnGit_d-f.md#fish
+[160]:      ./langsOnGit_d-f.md#fluent
+[161]:      ./langsOnGit_d-f.md#flux
+[162]:      ./langsOnGit_d-f.md#formatted
+[163]:      ./langsOnGit_d-f.md#forth
+[164]:      ./langsOnGit_d-f.md#fortran
+[165]:      ./langsOnGit_d-f.md#fortran-free-form
+[166]:      ./langsOnGit_d-f.md#freebasic
+[167]:      ./langsOnGit_d-f.md#freemarker
+[168]:      ./langsOnGit_d-f.md#frege
+[169]:      ./langsOnGit_d-f.md#futhark
+
+[lst_G-H]:  ./langsOnGit_g-h.md
+[170]:      ./langsOnGit_g-h.md#g-code
+[171]:      ./langsOnGit_g-h.md#game-maker-language
+[172]:      ./langsOnGit_g-h.md#gaml
+[173]:      ./langsOnGit_g-h.md#gams
+[174]:      ./langsOnGit_g-h.md#gap
+[175]:      ./langsOnGit_g-h.md#gcc-machine-description
+[176]:      ./langsOnGit_g-h.md#gdb
+[177]:      ./langsOnGit_g-h.md#gdscript
+[178]:      ./langsOnGit_g-h.md#gedcom
+[179]:      ./langsOnGit_g-h.md#gemfilelock
+[180]:      ./langsOnGit_g-h.md#genie
+[181]:      ./langsOnGit_g-h.md#genshi
+[182]:      ./langsOnGit_g-h.md#gentoo-ebuild
+[183]:      ./langsOnGit_g-h.md#gentoo-eclass
+[184]:      ./langsOnGit_g-h.md#gerber-image
+[185]:      ./langsOnGit_g-h.md#gettext-catalog
+[186]:      ./langsOnGit_g-h.md#gherkin
+[187]:      ./langsOnGit_g-h.md#git-attributes
+[188]:      ./langsOnGit_g-h.md#git-config
+[189]:      ./langsOnGit_g-h.md#glsl
+[190]:      ./langsOnGit_g-h.md#glyph
+[191]:      ./langsOnGit_g-h.md#glyph-bitmap-distribution-format
+[192]:      ./langsOnGit_g-h.md#gn
+[193]:      ./langsOnGit_g-h.md#gnuplot
+[194]:      ./langsOnGit_g-h.md#go
+[195]:      ./langsOnGit_g-h.md#go-checksums
+[196]:      ./langsOnGit_g-h.md#go-module
+[197]:      ./langsOnGit_g-h.md#golo
+[198]:      ./langsOnGit_g-h.md#gosu
+[199]:      ./langsOnGit_g-h.md#grace
+[200]:      ./langsOnGit_g-h.md#gradle
+[201]:      ./langsOnGit_g-h.md#grammatical-framework
+[202]:      ./langsOnGit_g-h.md#graph-modeling-language
+[203]:      ./langsOnGit_g-h.md#graphql
+[204]:      ./langsOnGit_g-h.md#graphviz-dot
+[205]:      ./langsOnGit_g-h.md#groovy
+[206]:      ./langsOnGit_g-h.md#groovy-server-pages
+[207]:      ./langsOnGit_g-h.md#hack
+[208]:      ./langsOnGit_g-h.md#haml
+[209]:      ./langsOnGit_g-h.md#handlebars
+[210]:      ./langsOnGit_g-h.md#haproxy
+[211]:      ./langsOnGit_g-h.md#harbour
+[212]:      ./langsOnGit_g-h.md#haskell
+[213]:      ./langsOnGit_g-h.md#haxe
+[214]:      ./langsOnGit_g-h.md#hcl
+[215]:      ./langsOnGit_g-h.md#hiveql
+[216]:      ./langsOnGit_g-h.md#hlsl
+[217]:      ./langsOnGit_g-h.md#holyc
+[218]:      ./langsOnGit_g-h.md#html
+[219]:      ./langsOnGit_g-h.md#htmlecr
+[220]:      ./langsOnGit_g-h.md#htmleex
+[221]:      ./langsOnGit_g-h.md#htmlerb
+[222]:      ./langsOnGit_g-h.md#htmlphp
+[223]:      ./langsOnGit_g-h.md#htmlrazor
+[224]:      ./langsOnGit_g-h.md#http
+[225]:      ./langsOnGit_g-h.md#hxml
+[226]:      ./langsOnGit_g-h.md#hy
+[227]:      ./langsOnGit_g-h.md#hyphy
+
+
 
 <!--
-[lst_D-F]:  ./langsOnGit_d-f.md
-[lst_G-H]:  ./langsOnGit_d-f.md
+
 [lst_I-L]:  ./langsOnGit_i-l.md
 [lst_M-N]:  ./langsOnGit_m-n.md
 [lst_O-Q]:  ./langsOnGit_o-q.md
@@ -919,86 +967,79 @@
 [lst_T-Z]:  ./langsOnGit_t-z.md
 
 
- ["D - F"][lst_D-F]        |
----------------------------|
- D                         |[111]: #d
- D-ObjDump                 |[]: #d-objdump
- Dafny                     |[]: #digital-command-language
- Darcs Patch               |[]: #dm
- Dart                      |[]: #dns-zone
- DataWeave                 |[]: #dtrace
- desktop                   |[]: #dafny
- Dhall                     |[]: #darcs-patch
- Diff                      |[]: #dart
- DIGITAL Command Language  |[]: #dataweave
- dircolors                 |[]: #dhall
- DirectX 3D File           |[]: #diff
- DM                        |[]: #directx-3d-file
- DNS Zone                  |[]: #dockerfile
- Dockerfile                |[]: #dogescript
- Dogescript                |[]: #dylan
- DTrace                    |[]: #e
- Dylan                     |[]: #e-mail
- E                         |[]: #ebnf
- E-mail                    |[]: #ecl
- Eagle                     |[]: #eclipse
- Easybuild                 |[]: #ejs
- EBNF                      |[]: #eq
- eC                        |[]: #eagle
- Ecere Projects            |[]: #easybuild
- ECL                       |[]: #ecere-projects
- ECLiPSe                   |[]: #editorconfig
- EditorConfig              |[]: #edje-data-collection
- Edje Data Collection      |[]: #eiffel
- edn                       |[]: #elixir
- Eiffel                    |[]: #elm
- EJS                       |[]: #emacs-lisp
- Elixir                    |[]: #emberscript
- Elm                       |[]: #erlang
- Emacs Lisp                |[]: #f
- EmberScript               |[]: #f-1
- EQ                        |[]: #figlet-font
- Erlang                    |[]: #flux
- F\*                       |[]: #factor
- F#                        |[]: #fancy
- Factor                    |[]: #fantom
- Fancy                     |[]: #faust
- Fantom                    |[]: #fennel
- Faust                     |[]: #filebench-wml
- Fennel                    |[]: #filterscript
- FIGlet Font               |[]: #fluent
- Filebench WML             |[]: #formatted
- Filterscript              |[]: #forth
- fish                      |[]: #fortran
- Fluent                    |[]: #fortran-free-form
- FLUX                      |[]: #freebasic
- Formatted                 |[]: #freemarker
- Forth                     |[]: #frege
- Fortran                   |[]: #futhark
- Fortran Free Form         |
- FreeBasic                 |
- FreeMarker                |
- Frege                     |
- Futhark                   |
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-                           |
-
-
-
-
-
-
-[lst_D-F]:  ./langsOnGit_d-f.md
+ ["I - L"][lst_I-L]        |
+---------------------------|[lst_I-L]:  ./langsOnGit_i-l.md
+ IDL                       |[228]: #idl
+ Idris                     |[]: #igor-pro
+ Ignore List               |[]: #ini
+ IGOR Pro                  |[]: #irc-log
+ ImageJ Macro              |[]: #idris
+ Inform 7                  |[]: #ignore-list
+ INI                       |[]: #imagej-macro
+ Inno Setup                |[]: #inform-7
+ Io                        |[]: #inno-setup
+ Ioke                      |[]: #io
+ IRC log                   |[]: #ioke
+ Isabelle                  |[]: #isabelle
+ Isabelle ROOT             |[]: #isabelle-root
+ J                         |[]: #j
+ JAR Manifest              |[]: #jar-manifest
+ Jasmin                    |[]: #jflex
+ Java                      |[]: #json
+ Java Properties           |[]: #json-with-comments
+ Java Server Pages (*JSP*) |[]: #json5
+ JavaScript                |[]: #jsonld
+ JavaScript+ERB            |[]: #jsoniq
+ Jest Snapshot             |[]: #jasmin
+ JFlex                     |[]: #java
+ Jinja                     |[]: #java-properties
+ Jison                     |[]: #java-server-pages-jsp
+ Jison Lex                 |[]: #javascript
+ Jolie                     |[]: #javascripterb
+ jq                        |[]: #jest-snapshot
+ JSON                      |[]: #jinja
+ JSON with Comments        |[]: #jison
+ JSON5                     |[]: #jison-lex
+ JSONiq                    |[]: #jolie
+ JSONLD                    |[]: #jsonnet
+ Jsonnet                   |[]: #julia
+ Julia                     |[]: #jupyter-notebook
+ Jupyter Notebook          |[]: #krl
+ Kaitai Struct             |[]: #kaitai-struct
+ KakouneScript             |[]: #kakounescript
+ KiCad Layout              |[]: #kicad-layout
+ KiCad Legacy Layout       |[]: #kicad-legacy-layout
+ KiCad Schematic           |[]: #kicad-schematic
+ Kit                       |[]: #kit
+ Kotlin                    |[]: #kotlin
+ KRL                       |[]: #kusto
+ Kusto                     |[]: #lfe
+ LabVIEW                   |[]: #llvm
+ Lark                      |[]: #lolcode
+ Lasso                     |[]: #lsl
+ Latte                     |[]: #ltspice-symbol
+ Lean                      |[]: #labview
+ Less                      |[]: #lark
+ Lex                       |[]: #lasso
+ LFE                       |[]: #latte
+ LilyPond                  |[]: #lean
+ Limbo                     |[]: #less
+ Linker Script             |[]: #lex
+ Linux Kernel Module       |[]: #lilypond
+ Liquid                    |[]: #limbo
+ Literate Agda             |[]: #linker-script
+ Literate CoffeeScript     |[]: #linux-kernel-module
+ Literate Haskell          |[]: #liquid
+ LiveScript                |[]: #literate-agda
+ LLVM                      |[]: #literate-coffeescript
+ Logos                     |[]: #literate-haskell
+ Logtalk                   |[]: #livescript
+ LOLCODE                   |[]: #logos
+ LookML                    |[]: #logtalk
+ LoomScript                |[]: #lookml
+ LSL                       |[]: #loomscript
+ LTspice Symbol            |[]: #lua
+ Lua                       |
 
 
 
@@ -1054,137 +1095,39 @@
 
 
 
-[lst_G-H]:  ./langsOnGit_d-f.md
-[164]: #g-code
-[]: #gaml
-[]: #gams
-[]: #gap
-[]: #gcc-machine-description
-[]: #gdb
-[]: #gdscript
-[]: #gedcom
-[]: #glsl
-[]: #gn
-[]: #game-maker-language
-[]: #gemfilelock
-[]: #genie
-[]: #genshi
-[]: #gentoo-ebuild
-[]: #gentoo-eclass
-[]: #gerber-image
-[]: #gettext-catalog
-[]: #gherkin
-[]: #git-attributes
-[]: #git-config
-[]: #glyph
-[]: #glyph-bitmap-distribution-format
-[]: #gnuplot
-[]: #go
-[]: #go-checksums
-[]: #go-module
-[]: #golo
-[]: #gosu
-[]: #grace
-[]: #gradle
-[]: #grammatical-framework
-[]: #graph-modeling-language
-[]: #graphql
-[]: #graphviz-dot
-[]: #groovy
-[]: #groovy-server-pages
-[]: #haproxy
-[]: #hcl
-[]: #hlsl
-[]: #html
-[]: #htmlecr
-[]: #htmleex
-[]: #htmlerb
-[]: #htmlphp
-[]: #htmlrazor
-[]: #http
-[]: #hxml
-[]: #hack
-[]: #haml
-[]: #handlebars
-[]: #harbour
-[]: #haskell
-[]: #haxe
-[]: #hiveql
-[]: #holyc
-[]: #hy
-[]: #hyphy
 
-[lst_I-L]:  ./langsOnGit_i-l.md
-[222]: #idl
-[]: #igor-pro
-[]: #ini
-[]: #irc-log
-[]: #idris
-[]: #ignore-list
-[]: #imagej-macro
-[]: #inform-7
-[]: #inno-setup
-[]: #io
-[]: #ioke
-[]: #isabelle
-[]: #isabelle-root
-[]: #j
-[]: #jar-manifest
-[]: #jflex
-[]: #json
-[]: #json-with-comments
-[]: #json5
-[]: #jsonld
-[]: #jsoniq
-[]: #jasmin
-[]: #java
-[]: #java-properties
-[]: #java-server-pages-jsp
-[]: #javascript
-[]: #javascripterb
-[]: #jest-snapshot
-[]: #jinja
-[]: #jison
-[]: #jison-lex
-[]: #jolie
-[]: #jsonnet
-[]: #julia
-[]: #jupyter-notebook
-[]: #krl
-[]: #kaitai-struct
-[]: #kakounescript
-[]: #kicad-layout
-[]: #kicad-legacy-layout
-[]: #kicad-schematic
-[]: #kit
-[]: #kotlin
-[]: #kusto
-[]: #lfe
-[]: #llvm
-[]: #lolcode
-[]: #lsl
-[]: #ltspice-symbol
-[]: #labview
-[]: #lark
-[]: #lasso
-[]: #latte
-[]: #lean
-[]: #less
-[]: #lex
-[]: #lilypond
-[]: #limbo
-[]: #linker-script
-[]: #linux-kernel-module
-[]: #liquid
-[]: #literate-agda
-[]: #literate-coffeescript
-[]: #literate-haskell
-[]: #livescript
-[]: #logos
-[]: #logtalk
-[]: #lookml
-[]: #loomscript
-[]: #lua
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [lst_M-N]:  ./langsOnGit_m-n.md
 [292]: #m
@@ -1490,11 +1433,11 @@
 []: #zig
 []: #zimpl
 
-[]: #desktop
-[]: #dircolors
-[]: #ec
-[]: #edn
-[]: #fish
+[]: 
+[]: 
+[]: 
+[]: 
+[]: 
 []: #jq
 []: #mirc-script
 []: #mcfunction
