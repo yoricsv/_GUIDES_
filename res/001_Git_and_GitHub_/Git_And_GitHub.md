@@ -10,18 +10,6 @@
 | [Databases][navDBs]           | * | [Programming][navPLn]         | * | [Git & GitHub][navGit]        |
 | [CMake][navCMk]               | * | [Docker & Kubernetes][navDkr] | * | [Embedded systems][navEmS]    |
 
-<!--
-- [Windows][navWin]
-- [Linux][navNix]
-- [Networks][navNet]
-- [Databases][navDBs]
-- [Programming][navPLn]
-- [Git & GitHub][navGit]
-- [CMake][navCMk]
-- [Docker & Kubernetes][navDkr]
-- [Embedded systems][navEmS]
--->
-
 [navWin]:   ../002_Windows_/Windows.md
 [navNix]:   ../003_Linux_(Unix)_/Linux_(Unix).md
 [navNet]:   ../004_Networks_/Networks.md
